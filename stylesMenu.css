@@ -21,6 +21,7 @@ a{
 
 .blanco{
     padding: 10px;
+    height: 600px;
 }
 
 header {
@@ -28,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #e74c3c;
     color: #fff;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
@@ -58,30 +59,31 @@ header nav ul li a {
 .hero {
     position: relative;
     height: 77vh; /* Full viewport height */
-    display: flex;
+
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     color: #fff;
     text-align: center;
-    overflow: hidden;
     padding: 25px;
+
 }
 
 
 
 .background-video {
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 1;
 }
 
 .content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero h1 {
@@ -89,23 +91,105 @@ header nav ul li a {
     margin: 20px 0;
 }
 
-.hero .cta {
-    margin-top: 20px;
-    padding: 10px 20px;
+/*
+.circulo1{
+    height: 150px;
+    width: 300px;
+    background-color: #701006;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100%;
+    margin-left: 40%;
+    
+}
+.circulo2{}
+
+.cta {
+    margin: 0 auto;
+    height: 200px;
+    width: 150px;
+    padding: 30px 15px 30px 15px;
     background-color: #e74c3c;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 100%;
+    margin-left: 45%;
 }
+*/
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+
+    position: relative;
+    top: -110px;
+}
+  
+  /* Estilos para el círculo externo (circulo1) */
+  .circulo1 {
+    width: 200px; /* Ancho del círculo */
+    height: 200px; /* Alto del círculo */
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilos para el círculo interno (circulo2) */
+  .circulo2 {
+    width: 150px; /* Ancho del círculo interno */
+    height: 150px; /* Alto del círculo interno */
+    background-color: #e74c3c; /* Color de fondo del círculo interno */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilos para el enlace (cta) */
+  .cta {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    /*color: #ffffff;  Color del texto */
+    color: black;
+    text-shadow: 
+        1px 1px 0 #D4AF37,
+        -1px 1px 0 #D4AF37,
+        1px -1px 0 #D4AF37,
+        -1px -1px 0 #D4AF37,
+        1px 0 0 #D4AF37,
+        -1px 0 0 #D4AF37,
+        0 1px 0 #D4AF37,
+        0 -1px 0 #D4AF37;
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    position: relative;
+    z-index: 2;
+  }
+  
+
 
 .flame-container {
     display: flex;
+    position: relative;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
+.content h1{
+
+    padding: 80px;
+
+}
+
 .flame {
-    width: 100px;
+    width: 250px;
     height: auto;
     animation: flicker 1s infinite alternate;
 }
@@ -195,6 +279,8 @@ footer .socials a {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
+    
 }
 
 .descripcion-quienesSomos h2{
@@ -202,12 +288,33 @@ footer .socials a {
     margin-bottom: 0;
     text-align: center;
     font-family: MiFuente;
+    color: #D4AF37;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        -1px -1px 0 black,
+        1px 0 0 black,
+        -1px 0 0 black,
+        0 1px 0 black,
+        0 -1px 0 black;
 }
 
 .descripcion-quienesSomos h3{
     margin-top: 0;
     text-align: center;
     font-family: MiFuente;
+    /*color: #8B4513;*/
+    color: #CC5500;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        -1px -1px 0 black,
+        1px 0 0 black,
+        -1px 0 0 black,
+        0 1px 0 black,
+        0 -1px 0 black;
 }
 
 .texto__descripcion-quienesSomos{
@@ -326,6 +433,10 @@ footer .socials a {
     .hero .cta {
         padding: 8px 16px;
     }
+
+    .flame {
+        width: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -392,7 +503,6 @@ footer .socials a {
 }
 
 
-
 /*Tarjeta De Menu*/
 
 .menu {
@@ -433,6 +543,10 @@ a{
 .wrap{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.wrap-title-section{
+    text-align: start;
 }
 
 .tarjeta-rest{
@@ -641,9 +755,11 @@ img{
 .wrap{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 80px 0 80px 0;
 }
 
 .column-2.carta{
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
@@ -653,29 +769,29 @@ img{
 .plato-carta{
     display: flex;
     align-items: center;
-    border: 1px solid #e5e5e5;
+    border: 3px solid #D4AF37;
     border-radius: 6px;
 }
 
 
 .img-plato-carta{
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 20%;
     justify-content: center;
 
 }
 
 .img-plato-carta img{
-    max-width: 100px;
-    max-height: 75px;
+    max-width: 190px;
+    max-height: 180px;
 }
 
 
 .title-plato-carta{
-    border: 1px solid #e5e5e5;
+    border: 3px solid #D4AF37;
     border-bottom: none;
     border-top: none;
-    flex-basis: 60%;
+    flex-basis: 50%;
     padding: 0 1rem;
 }
 
