@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #e74c3c;
+    background: linear-gradient(to bottom, #62162f, #cc0000);
     color: #fff;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
@@ -84,6 +84,7 @@ header nav ul li a {
 .content {
     position: relative;
     z-index: 2;
+    top: -35px;
 }
 
 .hero h1 {
@@ -124,13 +125,13 @@ header nav ul li a {
     align-items: center; /* Centra verticalmente los elementos */
 
     position: relative;
-    top: -110px;
+    top: -80px;
 }
   
   /* Estilos para el círculo externo (circulo1) */
   .circulo1 {
-    width: 200px; /* Ancho del círculo */
-    height: 200px; /* Alto del círculo */
+    width: 170px; /* Ancho del círculo */
+    height: 170px; /* Alto del círculo */
     background-color: #ffffff; /* Color de fondo */
     border-radius: 50%; /* Hace que el contenedor sea un círculo */
     display: flex;
@@ -189,9 +190,11 @@ header nav ul li a {
 }
 
 .flame {
-    width: 250px;
+    width: 150px;
     height: auto;
     animation: flicker 1s infinite alternate;
+    position: relative;
+    top: 33px;
 }
 
 @keyframes flicker {
@@ -299,20 +302,22 @@ footer .socials a {
 }
 
 .descripcion-quienesSomos h3{
+    letter-spacing: 2px;
     margin-top: 0;
     text-align: center;
     font-family: MiFuente;
     /*color: #8B4513;*/
     color: #CC5500;
     text-shadow: 
-        1px 1px 0 black,
-        -1px 1px 0 black,
-        1px -1px 0 black,
-        -1px -1px 0 black,
-        1px 0 0 black,
+        .5px .5px 0 black,
+        -.5px .5px 0 black,
+        .5px -.5px 0 black,
+        -.5px -.5px 0 black,
+        .5px 0 0 black,
         -1px 0 0 black,
-        0 1px 0 black,
-        0 -1px 0 black;
+        0 .5px 0 black,
+        0 -.5px 0 black;
+    
 }
 
 .texto__descripcion-quienesSomos{
