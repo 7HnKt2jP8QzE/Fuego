@@ -190,7 +190,7 @@ header nav ul li a {
 }
 
 .flame {
-    width: 150px;
+    width: 160px;
     height: auto;
     /*animation: flicker 1s infinite alternate;*/
     position: relative;
@@ -336,10 +336,11 @@ footer .socials a {
     height: auto;
     margin: 50px auto;
     overflow: hidden;
+    border-style: 1px solid black;/*TRABAJAR EN EL BORDE*/
 }
 
 .slider-box img{
-    height: 600px;
+    height: 450px;
 }
 .slider-box ul {
     display: flex;
