@@ -191,7 +191,7 @@ header nav ul li a {
 .flame {
     width: 250px;
     height: auto;
-    animation: flicker 1s infinite alternate;
+   /* animation: flicker 1s infinite alternate;*/
 }
 
 @keyframes flicker {
@@ -617,6 +617,9 @@ img{
 }
 
 .wrap{
+    /*background-image: url(imagenes/PHOTO-2024-07-22-13-30-00.jpg);*/
+    /*background-repeat: no-repeat;*/
+    background-size: auto;
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 0 80px 0;
