@@ -25,6 +25,8 @@ a{
 }
 
 header {
+    margin: 0 auto;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +147,7 @@ header nav ul li a {
   .circulo2 {
     width: 150px; /* Ancho del círculo interno */
     height: 150px; /* Alto del círculo interno */
-    background-color: #e74c3c; /* Color de fondo del círculo interno */
+    background: radial-gradient(circle, #62162f 1%, #cc0000); /*linear-gradient(to bottom right, #62162f, #cc0000);  Color de fondo del círculo interno */
     border-radius: 50%; /* Hace que el contenedor sea un círculo */
     display: flex;
     justify-content: center;
@@ -265,11 +267,20 @@ footer .socials a {
     max-width:1200px ;
     width: 95%;
     margin: 0 auto;
-    padding: 40px 20px;
+   /* padding: 0 20px;*/
+    padding-top: 10%;
+}
+
+.quienesSomos-Puertas{
+    height: 150px ;
+    border-radius: 50%;
+    
+
 }
 
 .quienesSomos_info{
     display: inline-block;
+    text-align: center;
 
 }
 
@@ -282,11 +293,16 @@ footer .socials a {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
+    
+
+
 }
 
 .descripcion-quienesSomos h2{
     font-size: 45px;
     margin-bottom: 0;
+    margin-top: 38px;
     text-align: center;
     font-family: MiFuente;
     color: #D4AF37;
@@ -304,6 +320,7 @@ footer .socials a {
 .descripcion-quienesSomos h3{
     letter-spacing: 2px;
     margin-top: 0;
+
     text-align: center;
     font-family: MiFuente;
     /*color: #8B4513;*/
@@ -322,8 +339,22 @@ footer .socials a {
 
 .texto__descripcion-quienesSomos{
     text-align: justify;
+    padding-top: 0%;
+    font-size: 17px;
 }
 
+.quienesSomos-video{
+
+    margin: 0;
+    padding: 0;
+    display: block;  
+    height: 56vh;
+    width: 100vh;
+    border: 10px ridge black;
+
+
+
+}
 
 .titulo {
     text-align: center;
@@ -332,24 +363,40 @@ footer .socials a {
 }
 
 .slider-box {
+    /*max-width: 1280px;
+    height: auto;
+    margin: 18px auto;
+    overflow: hidden;
+    border-style: 1px solid black;TRABAJAR EN EL BORDE*/
+}
+.slider-box-imagenes{
+max-width: 1202px;
+  height: auto;
+  margin: -193px auto;
+  overflow: hidden;}
+
+  .slider-box {
     max-width: 1280px;
     height: auto;
-    margin: 50px auto;
+    margin: 18px auto;
     overflow: hidden;
-    border-style: 1px solid black;/*TRABAJAR EN EL BORDE*/
 }
 
-.slider-box img{
-    height: 450px;
+.slider-box img, .slider-box-imagenes img{
+    height: 519px;
 }
-.slider-box ul {
+.slider-box ul, .slider-box-imagenes ul {
     display: flex;
     padding: 0;
+    margin: 0;
     width: 400%;
-    animation: slide 40s infinite alternate ease-in-out;
+    /*animation: slide 40s infinite alternate ease-in-out;*/
+}
+.slider-box-imagenes ul {
+    animation: slide 25s infinite alternate ease-in-out;
 }
 
-.slider-box li {
+.slider-box li , .slider-box-imagenes li {
     width: 100%;
     list-style: none;
     position: relative;
@@ -374,9 +421,9 @@ footer .socials a {
     margin-bottom: 35px;
 }
 
-.slider-box img {
+.slider-box img, .slider-box-imagenes img {
     width: 100%;
-    border-radius: 10%;
+    /*border-radius: 10%;*/
 
 }
 
@@ -412,7 +459,7 @@ footer .socials a {
         margin-bottom: 10px;
     }
 
-    .slider-box {
+    .slider-box, .slider-box-imagenes {
         width: 100%;
     }
 
@@ -441,6 +488,17 @@ footer .socials a {
     .flame {
         width: 100px;
     }
+
+    .quienesSomos {
+        
+        padding-top:70%;
+    }
+
+    .slider-box, .slider-box-imagenes {
+       
+        padding-top:30%;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -470,6 +528,8 @@ footer .socials a {
         font-size: 30px;
         margin: 30px auto 0;
     }
+
+    
 }
 
 @media (max-width: 576px) {
@@ -489,6 +549,7 @@ footer .socials a {
         padding: 6px 12px;
     }
 
+    
   
 }
 
@@ -532,7 +593,8 @@ a{
 }
 
 .imagen1{
-    background: url(imagenes/imagen5.jpg) center;
+    background: url(imagenes/IMG_4796.JPG) no-repeat;
+    background-position: 50% center;
     background-size: cover;
 }
 
@@ -542,12 +604,13 @@ a{
 }
 
 .imagen3{
-    background: url(imagenes/imagen7.jpg)center;
+    background: url(imagenes/paellaDePollo.jpg)center;
     background-size: cover;
 }
 
 .imagen4{
-    background: url(imagenes/imagen8.jpg)center;
+    background: url(imagenes/Chuleta\ de\ cordero.JPG)center;
+    background-position: 46% center;
     background-size: cover;
 }
 
@@ -576,7 +639,8 @@ a{
     color: #FFF;
     padding: .5rem;
     border-radius: 6px;
-    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5))
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+    width: 100%;
 }
 
 
@@ -644,6 +708,8 @@ a{
         width: 98%;
         
     }
+
+    
 }
 
 
@@ -657,6 +723,8 @@ a{
     .column4{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    
 }
 
 
@@ -772,6 +840,9 @@ button:hover span{
     animation-play-state: paused;
 }
 
+
+
+.wrap-text_tarjeta-rest
 
 /*Menu HTML*/
 
