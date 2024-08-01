@@ -238,10 +238,6 @@
     <div class="wrapper">
       <button id="menuButton">
         Menu !
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
       </button>
     </div>
   </div>
@@ -339,9 +335,9 @@
         if (width <= 390) {
           // Evitar el comportamiento por defecto del enlace
           event.preventDefault();
-          window.location.href = 'menuCelular.html';
-        } else {
           window.location.href = 'menu.html';
+        } else {
+          window.location.href = 'menuCelular.html';
         }
       });
     });
