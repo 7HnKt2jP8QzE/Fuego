@@ -98,7 +98,7 @@
   </div>
 
 
-
+  </div>
 
   <div class="quienesSomos dos-columnas">
     <div class="quienesSomos_info">
@@ -324,24 +324,7 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const button = document.getElementById('menuButton');
-
-      button.addEventListener('click', function (event) {
-        const width = window.innerWidth;
-        console.log(width);
-
-        if (width <= 390) {
-          // Evitar el comportamiento por defecto del enlace
-          window.location.href = 'menu.html';
-        } else {
-          event.preventDefault();
-          window.location.href = 'menuCelular.html';
-        }
-      });
-    });
-  </script>
+ 
 </body>
 
 </html>
