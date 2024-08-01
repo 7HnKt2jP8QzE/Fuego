@@ -236,11 +236,14 @@
 
   <div class="boton">
     <div class="wrapper">
-      <button id="menuButton">
-        Menu !
-      </button>
+        <button id="menuButton">
+            <a href="menu.html" id="menuLink">Menu !</a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-  </div>
 
   <div class="horario">
     <table class="tabla-ejemplo">
@@ -324,24 +327,21 @@
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const button = document.getElementById('menuButton');
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        const navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
 
-      button.addEventListener('click', function (event) {
-        const width = window.innerWidth;
-        console.log(width);
-
-        if (width <= 390) {
-          // Evitar el comportamiento por defecto del enlace
-          window.location.href = 'menu.html';
-        } else {
-          event.preventDefault();
-          window.location.href = 'menuCelular.html';
-        }
-      });
-    });
-  </script>
+    // Redirigir al usuario a menuCelular.html si la ventana es de 390x844
+    const menuLink = document.getElementById('menuLink');
+    if (window.innerWidth === 390 && window.innerHeight === 844) {
+        menuLink.href = "menuCelular.html";
+        console.log("clic")
+    }
+</script>
 </body>
 
 </html>
