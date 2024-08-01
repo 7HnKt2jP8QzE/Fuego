@@ -330,18 +330,18 @@
 
   <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
   <script>
-    hamburger = document.querySelector(".hamburger");
+    const hamburger = document.querySelector(".hamburger");
     hamburger.onclick = function () {
-      navBar = document.querySelector(".nav-bar");
-      navBar.classList.toggle("active");
+        const navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
     }
 
     // Redirigir al usuario a menuCelular.html si la ventana es de 390x844
     const menuLink = document.getElementById('menuLink');
     if (window.innerWidth === 390 && window.innerHeight === 844) {
-      menuLink.href = "menuCelular.html";
+        menuLink.href = "menuCelular.html";
     }
-  </script>
+</script>
 </body>
 
 </html>
