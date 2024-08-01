@@ -10,18 +10,18 @@
   <link rel="icon" href="imagenes/imagenFuego.png" type="image/png" />
   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8">
 
-    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="./js/three.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.onebook3d-2.33.js?2"></script>
-    
-    
-    <script>
-    
-    $(function(){
-    
+  <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="./js/three.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.onebook3d-2.33.js?2"></script>
+
+
+  <script>
+
+    $(function () {
+
       var src1 = [
-        'ga02/Mesa de trabajo 1.jpg', 
+        'ga02/Mesa de trabajo 1.jpg',
         'ga02/Mesa de trabajo 2.jpg', 'ga02/Mesa de trabajo 3.jpg',
         'ga02/Mesa de trabajo 4.jpg', 'ga02/Mesa de trabajo 5.jpg',
         'ga02/Mesa de trabajo 6.jpg', 'ga02/Mesa de trabajo 7.jpg',
@@ -31,282 +31,300 @@
         'ga02/Mesa de trabajo 14.jpg', 'ga02/Mesa de trabajo 15.jpg',
         'ga02/Mesa de trabajo 16.jpg', 'ga02/Mesa de trabajo 17.jpg',
         'ga02/Mesa de trabajo 17.jpg',
-        ];	
-      
+      ];
+
       var src3 = [
-        ['ga04/001.jpg','Title 1'], 
-        ['ga04/002.jpg','Title 2'], ['ga04/003.jpg','Title 3'],
-        ['ga04/004.jpg','Title 4'], ['ga04/005.jpg','Title 5'],
-        ['ga04/006.jpg','Title 6'], ['ga04/007.jpg','Title 7'],
-        ['ga04/008.jpg','Title 8'], ['ga04/009.jpg','Title 9'],
-        ['ga04/010.jpg','TItle 10']
-        ];	
-        
-        
+        ['ga04/001.jpg', 'Title 1'],
+        ['ga04/002.jpg', 'Title 2'], ['ga04/003.jpg', 'Title 3'],
+        ['ga04/004.jpg', 'Title 4'], ['ga04/005.jpg', 'Title 5'],
+        ['ga04/006.jpg', 'Title 6'], ['ga04/007.jpg', 'Title 7'],
+        ['ga04/008.jpg', 'Title 8'], ['ga04/009.jpg', 'Title 9'],
+        ['ga04/010.jpg', 'TItle 10']
+      ];
+
+
       var src4 = [
-        'ga04/001.jpg', 
+        'ga04/001.jpg',
         'ga04/002.jpg', 'ga04/003.jpg',
         'ga04/004.jpg', 'ga04/005.jpg',
         'ga04/006.jpg', 'ga04/007.jpg',
         'ga04/008.jpg', 'ga04/009.jpg',
         'ga04/010.jpg'
-        ];	
-      
-      $('#photobook').onebook(src1,{skin:['light','dark'], bgDark:'#56998c url(https://mrwallpaper.com/images/hd/white-and-gold-leaves-trjs9v1cw96vpc9w.jpg)',bgLight:'#d97f6f url(https://images4.alphacoders.com/131/1318503.jpeg)', border:0, cesh:false});
-        
-      
-      $('.links a:eq(0)').click(function(){
-         $.onebook(src4,{language:'it'});
-         return false;
+      ];
+
+      $('#photobook').onebook(src1, { skin: ['light', 'dark'], bgDark: '#56998c url(https://mrwallpaper.com/images/hd/white-and-gold-leaves-trjs9v1cw96vpc9w.jpg)', bgLight: '#d97f6f url(https://images4.alphacoders.com/131/1318503.jpeg)', border: 0, cesh: false });
+
+
+      $('.links a:eq(0)').click(function () {
+        $.onebook(src4, { language: 'it' });
+        return false;
       });
-      
-      
-        $('.links a:eq(1)').click(function(){
-         $.onebook(src4,{border:100, skin:'light', pageColor:'#60baaa', bgLight:'#56998c url(./i/bg.jpg)', cesh:false});
-         return false;
-      });	
-    
-      $('.links a:eq(2)').click(function(){
-         $.onebook(src3,{slope:1, skin:'dark', startPage:4, border:10, flip:'basic', cesh:false});
-         return false;
-      });	
-      
-    
+
+
+      $('.links a:eq(1)').click(function () {
+        $.onebook(src4, { border: 100, skin: 'light', pageColor: '#60baaa', bgLight: '#56998c url(./i/bg.jpg)', cesh: false });
+        return false;
+      });
+
+      $('.links a:eq(2)').click(function () {
+        $.onebook(src3, { slope: 1, skin: 'dark', startPage: 4, border: 10, flip: 'basic', cesh: false });
+        return false;
+      });
+
+
     });
-    
-    
-    </script>
-    
-    
-    <style>
-    html,body{color:#000000;}
-    body * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-    .links a:link,.links a:visited{color:black;text-decoration:none;font:20px sans-serif;}
-    .links a:hover{color:black;text-decoration:underline;}
-    
-    .red {border:14px ridge #ecbf38;}
-    .red-filled {background:#e0604a;border:1px solid #ffc30d;}
-   
-    
+
+
+  </script>
+
+
+  <style>
+    html,
+    body {
+      color: #000000;
+    }
+
+    body * {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .links a:link,
+    .links a:visited {
+      color: black;
+      text-decoration: none;
+      font: 20px sans-serif;
+    }
+
+    .links a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .red {
+      border: 14px ridge #ecbf38;
+    }
+
+    .red-filled {
+      background: #e0604a;
+      border: 1px solid #ffc30d;
+    }
+
+
     .section {
-  background: url();
-  background-size: 800px 700px; /* Ajusta el tamaño del background */
-  background-repeat: no-repeat;
-  width: 800px;
-  border-radius: 10px;
-  margin: 50px auto;
-}
-    .section p strong {color:gold;}
-    
-   
-    
-   
-    </style>
+      background: url();
+      background-size: 800px 700px;
+      /* Ajusta el tamaño del background */
+      background-repeat: no-repeat;
+      width: 800px;
+      border-radius: 10px;
+      margin: 50px auto;
+    }
+
+    .section p strong {
+      color: gold;
+    }
+  </style>
 </head>
 
 <body>
   <div class="blanco">
 
     <!--INICIO MENU-->
-      <header>
-        <div class="logo">Fuego</div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Features</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-      </header>
-    <!--FIN MENU-->
-
-    <section id="inicio" class="hero">
-      <div class="container">
-        <div class="circulo1">
-          <div class="content">
-            <div class="flame-container">
-              <img src="imagenes/imagenFuego.png" alt="Llama de Fuego" class="flame" />
-            </div>
-            <!--  <h1>Sabor que enciende tus sentidos</h1> -->
-          </div>
-        </div>
+    <header>
+      <div class="logo">Fuego</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-
-      <div class="slider-box-imagenes">
+      <nav class="nav-bar">
         <ul>
           <li>
-            <img src="imagenes/imagen1.jpg" alt="" />
-            <div class="texto">
-
-            </div>
+            <a href="" class="active">Home</a>
           </li>
-
           <li>
-            <img src="imagenes/areaVinos.JPG" alt="" />
-            <div class="texto">
-
-            </div>
+            <a href="">Features</a>
           </li>
-
           <li>
-            <img src="imagenes/Puertas restaurante.png" alt="" />
-            <div class="texto">
-
-            </div>
+            <a href="">Pricing</a>
           </li>
-
           <li>
-            <img src="imagenes/areaMesa2.jpg" alt="" />
-            <div class="texto">
-
-            </div>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
+  </div>
+  </header>
+  <!--FIN MENU-->
 
-    </section>
+  <section id="inicio" class="hero">
     <div class="container">
       <div class="circulo1">
-        <div class="circulo2">
-          <a href="#contacto" class="cta">Haz una Reserva</a>
+        <div class="content">
+          <div class="flame-container">
+            <img src="imagenes/imagenFuego.png" alt="Llama de Fuego" class="flame" />
+          </div>
+          <!--  <h1>Sabor que enciende tus sentidos</h1> -->
         </div>
       </div>
     </div>
+
+    <div class="slider-box-imagenes">
+      <ul>
+        <li>
+          <img src="imagenes/imagen1.jpg" alt="" />
+          <div class="texto">
+
+          </div>
+        </li>
+
+        <li>
+          <img src="imagenes/areaVinos.JPG" alt="" />
+          <div class="texto">
+
+          </div>
+        </li>
+
+        <li>
+          <img src="imagenes/Puertas restaurante.png" alt="" />
+          <div class="texto">
+
+          </div>
+        </li>
+
+        <li>
+          <img src="imagenes/areaMesa2.jpg" alt="" />
+          <div class="texto">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <div class="container">
+    <div class="circulo1">
+      <div class="circulo2">
+        <a href="#contacto" class="cta">Haz una Reserva</a>
+      </div>
+    </div>
+  </div>
 
 
   </div>
 
   <div class="section red">
     <div style="padding:30px;">
-      <div id="photobook" style="height:500px;"></div> 
-    </div>
-    </div>
-    
-    <div class="section-list blue">
-
-
-
-
-  <div class="boton">
-    <div class="wrapper">
-      <button>
-        <a href="menu.html">Menu !</a>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div id="photobook" style="height:500px;"></div>
     </div>
   </div>
 
-  <div class="horario">
-    <table class="tabla-ejemplo">
-      <thead>
-        <tr>
-          <th>Dia</th>
-          <th>Horario</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes </td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Miercoles</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Jueves</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Sabado</td>
-          <td>CERRADO</td>
-        </tr>
-        <tr>
-          <td>Domingo</td>
-          <td>11:30-23:00</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="item2 mapa">
-
-    <div class="mapGoogle">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2637743446912!2d-3.70160772465988!3d40.4251577714381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229592600f3f5%3A0x6433eecb2cea2a60!2sFuego%20Kosher%20Steak%20House%20Madrid!5e0!3m2!1ses!2scr!4v1721020527442!5m2!1ses!2scr"
-        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="450"
-        height="345"></iframe>
-    </div>
-  </div>
-
-  <div class="contactanosFranja contenedor">
-    <div class="item contactanosFranja__Info">
-      <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Insta"><a href="#"><i
-            class="fa-brands fa-instagram"></i> FuegoKosherMadrid</a></div>
-      <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Whatsapp"><a href="#"><i
-            class="fa-brands fa-whatsapp"></i> +34658630295</a></div>
-      <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Telefono"><a href="#"><i
-            class="fa-solid fa-phone-volume"></i> +34910237962</a></div>
-      <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Email"><a href="#"><i
-            class="fa-solid fa-envelopes-bulk"></i> fuegoKoshermadrid@gmail.com</a></div>
-      <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Direccion"><i
-          class="fa-solid fa-location-dot"></i> San Lorenzo 9, 28004, Madrid</div>
+  <div class="section-list blue">
+    <div class="boton">
+      <div class="wrapper">
+        <button>
+          <a href="menu.html">Menu !</a>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
 
-    <div class="rombo">
-      <span>Contáctanos</span>
+    <div class="horario">
+      <table class="tabla-ejemplo">
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes </td>
+            <td>11:30-23:00</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>11:30-23:00</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>11:30-23:00</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>11:30-23:00</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>11:30-23:00</td>
+          </tr>
+          <tr>
+            <td>Sabado</td>
+            <td>CERRADO</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>11:30-23:00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-  </div>
+    <div class="item2 mapa">
 
-
-
-  <footer>
-    <p>&copy; 2024 Fuego. Todos los derechos reservados.</p>
-    <div class="socials">
-      <a href="#">Whatsapp</a>
-      <a href="#">Instagram</a>
-      <a href="#">Email</a>
+      <div class="mapGoogle">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2637743446912!2d-3.70160772465988!3d40.4251577714381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229592600f3f5%3A0x6433eecb2cea2a60!2sFuego%20Kosher%20Steak%20House%20Madrid!5e0!3m2!1ses!2scr!4v1721020527442!5m2!1ses!2scr"
+          style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="450"
+          height="345"></iframe>
+      </div>
     </div>
-  </footer>
 
-  <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
-  <script>
-    hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function () {
-      navBar = document.querySelector(".nav-bar");
-      navBar.classList.toggle("active");
-    }
-  </script>
+    <div class="contactanosFranja contenedor">
+      <div class="item contactanosFranja__Info">
+        <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Insta"><a href="#"><i
+              class="fa-brands fa-instagram"></i> FuegoKosherMadrid</a></div>
+        <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Whatsapp"><a href="#"><i
+              class="fa-brands fa-whatsapp"></i> +34658630295</a></div>
+        <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Telefono"><a href="#"><i
+              class="fa-solid fa-phone-volume"></i> +34910237962</a></div>
+        <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Email"><a href="#"><i
+              class="fa-solid fa-envelopes-bulk"></i> fuegoKoshermadrid@gmail.com</a></div>
+        <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Direccion"><i
+            class="fa-solid fa-location-dot"></i> San Lorenzo 9, 28004, Madrid</div>
+      </div>
+
+      <div class="rombo">
+        <span>Contáctanos</span>
+      </div>
+
+    </div>
+
+
+
+    <footer>
+      <p>&copy; 2024 Fuego. Todos los derechos reservados.</p>
+      <div class="socials">
+        <a href="#">Whatsapp</a>
+        <a href="#">Instagram</a>
+        <a href="#">Email</a>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      }
+    </script>
 </body>
 
 </html>
