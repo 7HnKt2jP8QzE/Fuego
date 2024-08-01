@@ -236,14 +236,15 @@
 
   <div class="boton">
     <div class="wrapper">
-        <button id="menuButton">
-            <a href="menu.html" id="menuLink">Menu !</a>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+      <button id="menuButton">
+        Menu !
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </div>
 
   <div class="horario">
     <table class="tabla-ejemplo">
@@ -330,31 +331,19 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const button = document.getElementById('menuButton');
+
       button.addEventListener('click', function (event) {
-        if (window.innerWidth <= 390) {
+        const width = window.innerWidth;
+
+        if (width <= 390) {
+          // Evitar el comportamiento por defecto del enlace
           event.preventDefault();
           window.location.href = 'menuCelular.html';
+        } else {
+          window.location.href = 'menu.html';
         }
       });
     });
-
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function mostrarSlide(n) {
-      if (n >= slides.length) slideIndex = 0;
-      if (n < 0) slideIndex = slides.length - 1;
-      slides.forEach((slide, index) => {
-        slide.style.display = (index === slideIndex) ? 'block' : 'none';
-      });
-    }
-
-    function moverSlide(n) {
-      slideIndex += n;
-      mostrarSlide(slideIndex);
-    }
-
-    mostrarSlide(slideIndex);
   </script>
 </body>
 
