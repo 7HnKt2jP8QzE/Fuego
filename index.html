@@ -327,21 +327,35 @@
     </div>
   </footer>
 
-  <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
   <script>
-    const hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function () {
-        const navBar = document.querySelector(".nav-bar");
-        navBar.classList.toggle("active");
+    document.addEventListener('DOMContentLoaded', function () {
+      const button = document.getElementById('menuButton');
+      button.addEventListener('click', function (event) {
+        if (window.innerWidth <= 390) {
+          event.preventDefault();
+          window.location.href = 'menuCelular.html';
+        }
+      });
+    });
+
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function mostrarSlide(n) {
+      if (n >= slides.length) slideIndex = 0;
+      if (n < 0) slideIndex = slides.length - 1;
+      slides.forEach((slide, index) => {
+        slide.style.display = (index === slideIndex) ? 'block' : 'none';
+      });
     }
 
-    // Redirigir al usuario a menuCelular.html si la ventana es de 390x844
-    const menuLink = document.getElementById('menuLink');
-    if (window.innerWidth === 390 && window.innerHeight === 844) {
-        menuLink.href = "menuCelular.html";
-        console.log("clic")
+    function moverSlide(n) {
+      slideIndex += n;
+      mostrarSlide(slideIndex);
     }
-</script>
+
+    mostrarSlide(slideIndex);
+  </script>
 </body>
 
 </html>
