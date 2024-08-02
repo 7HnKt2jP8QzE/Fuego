@@ -778,18 +778,33 @@ button:hover span {
 
 
 .horario {
-    margin: 20px;
+    margin: 23px auto;
     padding: 20px;
     background-color: #dbdcdd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
     text-align: center;
-}
+    width: 300px;
+  }
 
 .horario h2 {
-    color: #007bff;
+    background: linear-gradient(90deg, #FFD700, #FFEC8B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+    text-shadow: 
+        0.1px 0.1px 0px #000,
+        -0.1px -0.1px 0px #000,
+        0.1px -0.1px 0px #000,
+        -0.1px 0.1px 0px #000,
+        0.1px 0px 0px #000,
+        0px 0.1px 0px #000,
+        -0.1px 0px 0px #000,
+        0px -0.1px 0px #000;
 }
+
+
+
 
 .dia {
     display: flex;
@@ -977,10 +992,9 @@ button:hover span {
 }
 
 
-
 @media (max-width: 768px) {
     .dos-columnas {
-        display: flex;
+        display: block;
         margin: 0 auto;
         text-align: center;
         
@@ -1001,10 +1015,6 @@ button:hover span {
         width: 76vh;
     }
 
-    .hero {
-        height: 85vh;
-        /*Full viewport height*/
-    }
 
     .tarjeta-rest {
         height: 300px;
@@ -1043,7 +1053,7 @@ button:hover span {
     }
 
     .hero {
-        height: 65vh;
+        height: 51vh;
        
     }
 
@@ -1063,8 +1073,105 @@ button:hover span {
         width: 44vh;
     }
 
+    .tarjeta-rest {
+        height: 300px;
+        width: 299px;
+        margin: 0 auto;
+    }
+
+    .item2 {
+        padding: 5px;
+        border: -3px solid white;
+        height: 333px;
+        width: 400px;
+        position: static;
+        right: 79px;
+        bottom: -2153px;
+        /* z-index: 1000; */
+        margin: 58px auto;
+    }
+    
+}
+
+@media (max-width: 820px) {
+    .dos-columnas {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    .container {
+        position: relative;
+        top: -110px;
+    }
+
+    .quienesSomos-Puertas {
+        /*position: relative;
+        left: 5px;*/
+        margin: 0 auto;
+    }
+
+    .quienesSomos-video {
+        width: 76vh;
+    }
+
+
+    .tarjeta-rest {
+        height: 300px;
+        width: 299px;
+        margin: 0 auto;
+    }
+    
+   .mapGoogle {
+        width: 634px;
+         height: 358px;
+        /*position: relative;*/
+        box-shadow: 0 0 40px rgba(36, 219, 19, 0.7);
+        animation: destello 2s infinite;
+        pointer-events: none;
+    }
+
+    
+
+    .column4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        position: relative;
+        top: -110px;
+    }
+
+    .quienesSomos-Puertas {
+        position: relative;
+       /* left: 5px;*/
+        margin: 0 auto;
+    }
+
+    .quienesSomos-video {
+        width: 44vh;
+    }
+
     .hero {
-        height: 65vh;
+        height: 45vh;
+       
+    }
+
+    .tarjeta-rest {
+        height: 300px;
+        width: 299px;
+        margin: 0 auto;
+    }
+
+    .quienesSomos-Puertas {
+        /*position: relative;
+        left: 5px;*/
+        margin: 0 auto;
+    }
+
+    .quienesSomos-video {
+        width: 40vh;
     }
 
     .tarjeta-rest {
@@ -1074,18 +1181,56 @@ button:hover span {
     }
 
     .item2 {
-        padding: initial; 
-        padding-bottom: 147px; 
-        border: none; 
-        height: initial; 
-        width: initial; 
-        position: static; 
-        right: initial; 
-        bottom: initial; 
-        z-index: auto; 
+        padding: 5px;
+        border: -3px solid white;
+        height: 333px;
+        width: 400px;
+        position: static;
+        right: 79px;
+        bottom: -2153px;
+        /* z-index: 1000; */
+        margin: 58px auto;
     }
     
 }
 
 
+@media (max-width: 900px) {
 
+    .hero {
+        position: relative;
+        height: 38vh;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .quienesSomos-video {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 49vh;
+        width: 35vh;
+        border: 10px ridge black;
+    }
+
+    .quienesSomos {
+
+        text-align: center;
+    }
+
+    .item2 {
+        padding: 0;
+        border: -3px solid white;
+        height: 404px;
+        width: 400px;
+        /* position: absolute; */
+        /* right: 79px; */
+        /* bottom: -2153px; */
+        /* z-index: 1000; */
+        margin: 0 auto;
+    }
+
+}
