@@ -313,7 +313,7 @@ footer .socials a {
 .quienesSomos_info {
     display: inline-block;
     text-align: center;
-
+    width: 531px;
     flex: 1;
     margin: 0 25px;
 
@@ -382,11 +382,9 @@ footer .socials a {
     margin: 0;
     padding: 0;
     display: block;
-    height: 56vh;
-    width: 100vh;
+    height: 49vh;
+    width: 83vh;
     border: 10px ridge black;
-
-
 
 }
 
@@ -479,7 +477,7 @@ footer .socials a {
 .mapGoogle {
     width: 600px;
     /* Ancho del div que contiene el mapa */
-    height: 252px;
+    height: 347px;
     /* Alto del div que contiene el mapa */
     position: relative;
     /* Ajusta el posicionamiento según tus necesidades */
@@ -735,7 +733,7 @@ button:hover span {
     width: 400px;
     position: absolute;
     right: 79px;
-    bottom: -1911px;
+    bottom: -2153px;
     z-index: 1000;
 
 }
@@ -935,13 +933,9 @@ button:hover span {
 
 
 
-
-
-
-
 /******MEDIA EFECTO******************************************/
 
-@media (min-width:390px) {
+@media (max-width:390px) {
     .quienesSomos-video {
         margin: 0;
         padding: 0;
@@ -974,29 +968,6 @@ button:hover span {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:480px) {
     .column4 {
         grid-template-columns: repeat(1, 1fr);
@@ -1007,7 +978,7 @@ button:hover span {
 
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .dos-columnas {
         display: flex;
         margin: 0 auto;
@@ -1118,49 +1089,3 @@ button:hover span {
 
 
 
-@media (min-width:1440px) {
-    
-    .column4 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 1rem;
-        row-gap: 1rem;
-    }
-
-    .mapa {
-        height: 50%;
-        padding-bottom: 50%;
-    }
-
-    iframe {
-        width: 98%;
-
-    }
-
-    .quienesSomos-video {
-        width: 137vh;
-    }
-
-    .item2 {
-        padding: initial; 
-        padding-bottom: 147px; 
-        border: none; 
-        height: initial; 
-        width: initial; 
-        position: static; 
-        right: initial; 
-        bottom: initial; 
-        z-index: auto; 
-    }
-
-    .tarjeta-rest {
-        
-        background-repeat: no-repeat;
-        height: 600px;
-        border-radius: 6px;
-        padding: 1rem .5rem;
-        display: flex;
-        align-items: end;
-    }
-
-}
