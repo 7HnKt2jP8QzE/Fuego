@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Fuego - Restaurante</title>
   <link rel="stylesheet" href="styles.css" />
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
@@ -15,28 +16,24 @@
 
     <!--INICIO MENU-->
     <header>
-      <div class="logo">Fuego</div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+      <div class="logo"><a href="index.html">Fuego</a></div>
+      <div class="hamburger"></div>
       <nav class="nav-bar">
         <ul>
           <li>
-            <a href="" class="active">Home</a>
+            <a href="index.html" class="active">Inicio</a>
           </li>
           <li>
-            <a href="">Features</a>
+            <a href="#nosotros">Nosotros</a>
           </li>
           <li>
-            <a href="">Pricing</a>
+            <a href="#menu">Menu</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="certificado.html">Certificados</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contacto">Contactanos</a>
           </li>
         </ul>
       </nav>
@@ -100,7 +97,7 @@
 
 
 
-  <div class="quienesSomos dos-columnas">
+  <div id="nosotros" class="quienesSomos dos-columnas">
     <div class="quienesSomos_info">
       <img class="quienesSomos-Puertas" src="imagenes/Puertas restaurante.png" alt="">
       </video>
@@ -150,7 +147,7 @@
   </div>
 
 
-  <div class="menu">
+  <div id="menu" class="menu">
 
     <h2>Especialidades de la casa</h2>
 
@@ -242,46 +239,39 @@
     </div>
   </div>
 
-  <div class="horario">
-    <table class="tabla-ejemplo">
-      <thead>
-        <tr>
-          <th>Dia</th>
-          <th>Horario</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes </td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Miercoles</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Jueves</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>11:30-23:00</td>
-        </tr>
-        <tr>
-          <td>Sabado</td>
-          <td>CERRADO</td>
-        </tr>
-        <tr>
-          <td>Domingo</td>
-          <td>11:30-23:00</td>
-        </tr>
-      </tbody>
-    </table>
+
+  <div id="contacto" class="horario">
+    <h2>Horario de Atención</h2>
+    <div class="dia">
+      <span class="nombreDia">Lunes:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Martes:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Miércoles:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Jueves:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Viernes:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Sábado:</span>
+      <span class="horarioDia">CERRADO</span>
+    </div>
+    <div class="dia">
+      <span class="nombreDia">Domingo:</span>
+      <span class="horarioDia">11:30-23:00</span>
+    </div>
   </div>
+
 
   <div class="item2 mapa">
 

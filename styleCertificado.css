@@ -5,7 +5,6 @@
     text-decoration: none;
     font-family: "Google Sans Regular";
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -735,7 +734,7 @@ button:hover span {
     width: 400px;
     position: absolute;
     right: 79px;
-    bottom: -1911px;
+    bottom: -1636px;
     z-index: 1000;
 
 }
@@ -779,32 +778,36 @@ button:hover span {
 }
 
 
+.tabla-ejemplo {
+    width: 40%;
+    text-align: centertbody;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tabla-ejemplo th,
+.tabla-ejemplo td {
+    border: 1px solid #7c1010;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-ejemplo th {
+    background-color: #1fc276;
+}
+
+.tabla-ejemplo tr:nth-child(even) {
+    background-color: #c41a9f;
+}
+
+.tabla-ejemplo tr:hover {
+    background-color: #a4ce0e;
+}
+
 .horario {
-    margin: 20px;
-    padding: 20px;
-    background-color: #dbdcdd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
-    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
-
-.horario h2 {
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-.dia {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-}
-
-.nombreDia, .horarioDia {
-    margin: 0 10px;
-    font-weight: bold;
-    color: #333;
-}
-
 
 
 

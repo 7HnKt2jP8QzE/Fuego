@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Fuego - Restaurante</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styleCertificado.css" />
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
   <link rel="icon" href="imagenes/imagenFuego.png" type="image/png" />
 </head>
@@ -98,54 +99,14 @@
   </div>
 
 
-  </div>
 
-  <div class="quienesSomos dos-columnas">
-    <div class="quienesSomos_info">
-      <img class="quienesSomos-Puertas" src="imagenes/Puertas restaurante.png" alt="">
-      </video>
-      <div class="slider-box">
-        <ul>
-          <li>
-            <video class="quienesSomos-video" src="fuego.mp4" autoplay loop muted controls></video>
 
-          </li>
-        </ul>
-      </div>
-
+  <div class="imagenesContenedor">
+    <div class="imagenInfo">
+        <img src="imagenes/Tehuda.jpg" alt="">
     </div>
-
-    <div class="quienesSomos_info">
-      <div class="descripcion-quienesSomos">
-        <br />
-        <h2 id="fuego">FUEGO</h2>
-        <h3>STEAKHOUSE</h3>
-        <div class="texto__descripcion-quienesSomos">
-          <p>
-            Bienvenidos al nuevo restaurante FUEGO Steak House en Madrid que está revolucionando el mundo de la
-            gastronomía: un lugar donde la carne es la protagonista y el horno de carbón es el secreto detrás de cada
-            deliciosa preparación. Ubicado en el corazón de la ciudad, somos el único establecimiento en la zona que
-            cuenta con esta exclusiva técnica de cocción, que resalta los sabores y aromas naturales de los
-            ingredientes, brindando una experiencia culinaria única e inigualable.
-
-          </p>
-
-          <p>
-            Nuestro equipo de chefs expertos se esmera en seleccionar las mejores piezas de carne, asegurando la máxima
-            calidad en cada plato. Desde jugosos filetes hasta tiernas costillas, cada bocado será una explosión de
-            sabor que deleitará tu paladar. Además, nuestra carta ofrece una amplia variedad de acompañamientos y
-            entrantes para complementar tu comida de la mejor manera.
-
-          </p>
-
-          <p>
-            Ven a descubrir el auténtico sabor de la carne en nuestro exclusivo restaurante, donde cada visita será una
-            experiencia gastronómica inolvidable. ¡Te esperamos con los brazos abiertos!
-          </p>
-
-
-        </div>
-      </div>
+    <div class="imagenInfo">
+        <img src="imagenes/FuegoTenedor.jpg" alt="">
     </div>
   </div>
 
@@ -324,7 +285,24 @@
     </div>
   </footer>
 
- 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const button = document.getElementById('menuButton');
+
+      button.addEventListener('click', function (event) {
+        const width = window.innerWidth;
+        console.log(width);
+
+        if (width <= 390) {
+          // Evitar el comportamiento por defecto del enlace
+          window.location.href = 'menuCelular.html';
+        } else {
+          event.preventDefault();
+          window.location.href = 'menu.html';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
