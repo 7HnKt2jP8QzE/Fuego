@@ -962,6 +962,26 @@ button:hover span {
         border: 10px ridge black;
       }
 
+      .hero {
+        position: relative;
+        height: 58vh;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+      }
+
+      .descripcion-quienesSomos h2 {
+        position: relative;
+        top: -20px;
+      }
+
+      .descripcion-quienesSomos h3 {
+       position: relative;
+        top: -24px;
+      }
+
 }
 
 @media (max-width: 1280px) {
