@@ -982,6 +982,18 @@ button:hover span {
         top: -24px;
       }
 
+      .item2 {
+
+        bottom: -1945px;
+        right: 151px;
+      }
+
+      .contactanosFranja__Info-Tarjeta {
+        width: 275px;
+        position: relative;
+        left: 278px;
+      }
+
 }
 
 @media (max-width: 1280px) {
