@@ -231,10 +231,18 @@
 
   </div>
 
+  <div class="boton botonPantatalla">
+    <div class="wrapper">
+      <button id="menuButton">
+       <a href="menu.html"></a> Menu !
+      </button>
+    </div>
+  </div>
+
   <div class="boton">
     <div class="wrapper">
       <button id="menuButton">
-        Menu !
+       <a href="menuCelular.html"></a> Menu !
       </button>
     </div>
   </div>
@@ -315,22 +323,7 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const button = document.getElementById('menuButton');
 
-      button.addEventListener('click', function (event) {
-        const width = window.innerWidth;
-        console.log(width);
-
-        if (width <= 390) {
-          // Evitar el comportamiento por defecto del enlace
-          window.location.href = 'menuCelular.html';
-        } else {
-          event.preventDefault();
-          window.location.href = 'menu.html';
-        }
-      });
-    });
   </script>
 </body>
 

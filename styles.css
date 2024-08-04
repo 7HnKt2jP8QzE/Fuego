@@ -1071,6 +1071,10 @@ button:hover span {
 
 @media (max-width: 820px) {
 
+    .botonPantatalla{
+        display: none;
+    }
+
 
 
     .dos-columnas {

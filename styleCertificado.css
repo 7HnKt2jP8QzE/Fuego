@@ -327,9 +327,11 @@ footer .socials a {
 }
 
 .imagenInfo img {
-    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto; /* Mantiene la proporción de las imágenes */
-}
+    width: 200px;
+    height: auto;
+    margin-top: 15px;
+    border-style: solid;
+  }
 
 
 
@@ -1070,6 +1072,13 @@ button:hover span {
 
 
 @media (max-width: 820px) {
+
+    .imagenesContenedor {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
 
 
 
