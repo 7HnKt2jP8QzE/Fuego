@@ -1265,6 +1265,13 @@ button:hover span {
             width: 350px;
         }
 
+        .texto__descripcion-quienesSomos {
+            text-align: justify;
+            padding-top: 0%;
+            font-size: 17px;
+            width: 279px;
+          }
+
 
     
     }
