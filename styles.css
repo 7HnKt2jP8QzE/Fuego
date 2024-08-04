@@ -952,6 +952,18 @@ button:hover span {
 
 /******MEDIA EFECTO******************************************/
 
+@media (max-width: 1920px){
+    .quienesSomos-video {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 33vh;
+        width: 56vh;
+        border: 10px ridge black;
+      }
+
+}
+
 @media (max-width: 1280px) {
 
     .botonCelular{
