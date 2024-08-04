@@ -1261,6 +1261,10 @@ button:hover span {
             display: none;
           }
 
+        iframe{
+            width: 350px;
+        }
+
 
     
     }
