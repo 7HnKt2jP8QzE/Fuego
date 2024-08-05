@@ -322,13 +322,17 @@ footer .socials a {
 
 .imagenesContenedor {
     display: flex;
-    justify-content: space-around; /* Ajusta el espaciado entre las imágenes */
-    align-items: center; /* Alinea verticalmente las imágenes */
+    justify-content: space-around;
+    /* Ajusta el espaciado entre las imágenes */
+    align-items: center;
+    /* Alinea verticalmente las imágenes */
 }
 
 .imagenInfo img {
-    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto; /* Mantiene la proporción de las imágenes */
+    width: 200px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
 }
 
 
@@ -735,7 +739,7 @@ button:hover span {
     right: 79px;
     bottom: -2142px;
     z-index: 1000;
-  }
+}
 
 
 .contactanosFranja__Info-Tarjeta {
@@ -784,14 +788,14 @@ button:hover span {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
     text-align: center;
     width: 300px;
-  }
+}
 
 .horario h2 {
     background: linear-gradient(90deg, #FFD700, #FFEC8B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
-    text-shadow: 
+    text-shadow:
         0.1px 0.1px 0px #000,
         -0.1px -0.1px 0px #000,
         0.1px -0.1px 0px #000,
@@ -811,7 +815,8 @@ button:hover span {
     padding: 5px 0;
 }
 
-.nombreDia, .horarioDia {
+.nombreDia,
+.horarioDia {
     margin: 0 10px;
     font-weight: bold;
     color: #333;
@@ -950,8 +955,8 @@ button:hover span {
 
 /******MEDIA EFECTO******************************************/
 
-/* Media query para 1920px */
 @media (max-width: 1920px) {
+
     .container {
         display: flex;
         justify-content: center;
@@ -1008,6 +1013,7 @@ button:hover span {
     }
 
     .item2 {
+
         bottom: -1742px;
         right: 79px;
     }
@@ -1035,10 +1041,20 @@ button:hover span {
         animation: borderColorChange 3s infinite;
         left: -119px;
     }
+
 }
 
-/* Media query para 1280px */
 @media (max-width: 1280px) {
+
+    /*--.botonCelular{
+        display: none;
+    }--*/
+
+    .item2 {
+        bottom: -1558px;
+        right: 74px;
+      }
+
     .container {
         display: flex;
         justify-content: center;
@@ -1052,13 +1068,15 @@ button:hover span {
 
     .container2 {
         position: relative;
-        top: -181px;
+        top: -114px;
+
         text-align: center;
     }
 
     .quienesSomos {
         position: relative;
-        top: -183px;
+        margin-top: 1%;
+
         text-align: center;
     }
 
@@ -1066,8 +1084,8 @@ button:hover span {
         margin: 0;
         padding: 0;
         display: block;
-        height: 49vh;
-        width: 54vh;
+        height: 26vh;
+        width: 32vh;
         border: 10px ridge black;
     }
 
@@ -1076,6 +1094,7 @@ button:hover span {
         top: -102px;
         margin: 44px 0px 0px 0;
     }
+
 
     .menu {
         text-align: center;
@@ -1090,11 +1109,27 @@ button:hover span {
         color: #8B4513;
         color: #CC5500;
         text-shadow: .5px .5px 0 black, -.5px .5px 0 black, .5px -.5px 0 black, -.5px -.5px 0 black, .5px 0 0 black, -1px 0 0 black, 0 .5px 0 black, 0 -.5px 0 black;
+        position: relative;
+        top: 52px;
     }
+
+    .texto__descripcion-quienesSomos {
+        text-align: justify;
+        padding-top: 0%;
+        font-size: 17px;
+        position: relative;
+        top: 51px;
+    }
+
+    .descripcion-quienesSomos h2 {
+        position: relative;
+        top: 53px;
+    }
+
 }
 
-/* Media query para 1130px */
 @media (max-width: 1130px) {
+
     .item2 {
         padding: 5px;
         border: -3px solid white;
@@ -1102,7 +1137,7 @@ button:hover span {
         width: 400px;
         position: absolute;
         right: 79px;
-        bottom: -2170px;
+        bottom: -1998px;
         z-index: 1000;
     }
 
@@ -1128,10 +1163,11 @@ button:hover span {
         justify-content: center;
         align-items: center;
         position: relative;
-        top: -576px;
+        top: -52px;
         width: 16%;
         margin: 0 auto;
-    }
+        text-align: center;
+      }
 
     .quienesSomos-video {
         margin: 0;
@@ -1144,19 +1180,30 @@ button:hover span {
 
     .quienesSomos {
         position: relative;
-        top: -568px;
+        top: 21px;
         text-align: center;
     }
 
     .menu {
         text-align: center;
         padding-top: 0;
-        margin-top: -28%;
+        margin-top: 6%;
     }
 }
 
-/* Media query para 960px */
 @media (max-width: 960px) {
+
+    .item2 {
+        padding: 5px;
+        border: -3px solid white;
+        height: 333px;
+        width: 400px;
+        position: absolute;
+        right: 39px;
+        bottom: -1886px;
+        z-index: 1000;
+      }
+
     .hero {
         position: relative;
         height: 47vh;
@@ -1181,12 +1228,13 @@ button:hover span {
     .container2 {
         position: relative;
         top: -181px;
+
         text-align: center;
     }
 
     .quienesSomos {
         position: relative;
-        top: -183px;
+        top: -94px;
         text-align: center;
     }
 
@@ -1205,10 +1253,11 @@ button:hover span {
         margin: 44px 0px 0px 0;
     }
 
+
     .menu {
         text-align: center;
         padding-top: 0;
-        margin-top: -28%;
+        margin-top: -10%;
     }
 
     .descripcion-quienesSomos h3 {
@@ -1220,10 +1269,15 @@ button:hover span {
         color: #CC5500;
         text-shadow: .5px .5px 0 black, -.5px .5px 0 black, .5px -.5px 0 black, -.5px -.5px 0 black, .5px 0 0 black, -1px 0 0 black, 0 .5px 0 black, 0 -.5px 0 black;
     }
+
+
+
+
 }
 
-/* Media query para 770px */
+
 @media (max-width: 770px) {
+
     .quienesSomos-video {
         margin: 0;
         padding: 0;
@@ -1237,8 +1291,10 @@ button:hover span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* Centra los elementos horizontalmente */
         position: relative;
-        top: 234px;
+        top: 0px;
+        margin-top: 55%;
         text-align: justify;
     }
 
@@ -1246,30 +1302,42 @@ button:hover span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* Centra los elementos horizontalmente */
         justify-content: center;
+        /* Centra los elementos verticalmente */
         text-align: justify;
+        /* Alinea el texto al centro */
     }
 
     .descripcion-quienesSomos {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* Centra los elementos horizontalmente */
         text-align: justify;
+        /* Alinea el texto al centro */
     }
 
     .texto__descripcion-quienesSomos {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* Centra los elementos horizontalmente */
         text-align: justify;
+        /* Alinea el texto al centro */
     }
 
     .quienesSomosFotoVideo {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* Centra los elementos horizontalmente */
         justify-content: center;
+        /* Centra los elementos verticalmente */
+
     }
+
+
 
     .menu {
         text-align: center;
@@ -1285,8 +1353,11 @@ button:hover span {
 
     .slider-box-imagenes img {
         width: 100%;
+        /*border-radius: 10%;*/
         height: 100%;
     }
+
+
 
     .container {
         position: relative;
@@ -1297,75 +1368,161 @@ button:hover span {
         top: 225px;
     }
 
+    .quienesSomos-Puertas,
+    .tarjeta-rest,
+    .item2 {
+        margin: 0 auto;
+    }
+
+
+
+    .quienesSomos_info {
+        width: 297px;
+    }
+
+    .tarjeta-rest {
+        height: 300px;
+        width: 299px;
+    }
+
+    .mapGoogle {
+        width: 634px;
+        height: 358px;
+        box-shadow: 0 0 40px rgba(36, 219, 19, 0.7);
+        animation: destello 2s infinite;
+        pointer-events: none;
+    }
+
+    .column4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero {
+        height: 20vh;
+    }
+
     .item2 {
         padding: 5px;
-        border: -3px solid white;
-        height: 433px;
-        width: 400px;
-        position: absolute;
-        right: -5px;
-        bottom: -1706px;
-        z-index: 1000;
+        border: 3px solid transparent;
+        height: 333px;
+        width: 370px;
+        position: static;
+        right: 79px;
+        bottom: -2153px;
+        margin: 58px auto;
     }
 }
 
-/* Media query para 414px */
-@media (max-width: 414px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: -52px;
-        width: 16%;
-        margin: 0 auto;
-        text-align: center;
+@media (max-width: 500px) {
+
+    .column4 {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .container2 {
+    .menu {
+        margin: 444px auto 0px;
+    }
+
+    .item2 {
+        padding: initial;
+        padding-bottom: 147px;
+        border: none;
+        height: initial;
+        width: 200px;
+        margin: 0 auto;
+        position: static;
+        right: initial;
+        bottom: initial;
+        z-index: auto;
+    }
+
+    .hero {
         position: relative;
-        top: -181px;
+        height: 1vh;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
         text-align: center;
+        padding: 25px;
     }
 
     .quienesSomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
-        top: -183px;
-        text-align: center;
-    }
-
-    .quienesSomos-video {
-        margin: 0;
-        padding: 0;
-        display: block;
-        height: 16vh;
-        width: 23vh;
-        border: 10px ridge black;
+        top: 320px;
+        text-align: justify;
     }
 
     .descripcion-quienesSomos {
         position: relative;
-        top: -102px;
+        top: 0px;
+        margin: 189px 0px 0px 0;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .hero {
+        position: relative;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+      }
+
+    .descripcion-quienesSomos {
+        position: relative;
+        top: 0px;
         margin: 44px 0px 0px 0;
+    }
+
+    .horario {
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #dbdcdd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
+        text-align: center;
+        width: 300px;
+    }
+
+    .quienesSomos-video {
+        width: 21vh;
     }
 
     .menu {
         text-align: center;
-        padding-top: 0;
-        margin-top: -28%;
+        width: 300px;
+        margin: -7px auto;
+        position: relative;
+        top: 269px;
     }
 
-    .descripcion-quienesSomos h3 {
-        letter-spacing: 2px;
-        margin-bottom: 27px;
-        text-align: center;
-        font-family: MiFuente;
-        color: #8B4513;
-        color: #CC5500;
-        text-shadow: .5px .5px 0 black, -.5px .5px 0 black, .5px -.5px 0 black, -.5px -.5px 0 black, .5px 0 0 black, -1px 0 0 black, 0 .5px 0 black, 0 -.5px 0 black;
+    .moverboton {
+        margin-top: 78%;
+    }
+
+    .rombo {
+        display: none;
+    }
+
+    .container2 {
+        top: -94px;
+    }
+
+    .quienesSomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 33px;
+        text-align: justify;
     }
 }
-
 
 
 
