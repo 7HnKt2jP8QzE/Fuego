@@ -149,7 +149,7 @@ header {
 
 .hero {
     position: relative;
-    height: 77vh;
+    height: 100%;
     /* Full viewport height */
 
     justify-content: center;
@@ -296,7 +296,7 @@ footer .socials a {
 
 
 .quienesSomos {
-    max-width: 1201px;
+    width: 1201px;
     width: 95%;
     margin: 0 auto;
     /* padding: 0 20px;*/
@@ -387,7 +387,7 @@ footer .socials a {
     margin: 0;
     padding: 0;
     display: block;
-    height: 49vh;
+    height: 100%;;
     width: 83vh;
     border: 10px ridge black;
 
@@ -396,22 +396,22 @@ footer .socials a {
 
 
 .slider-box {
-    /*max-width: 1280px;
+    width: 1280px;
     height: auto;
     margin: 18px auto;
     overflow: hidden;
-    border-style: 1px solid black;TRABAJAR EN EL BORDE*/
+    border-style: 1px solid black;/*Trabajar en el borde*/
 }
 
 .slider-box-imagenes {
-    max-width: 1202px;
+    width: ;
     height: auto;
     margin: -193px auto;
     overflow: hidden;
 }
 
 .slider-box {
-    max-width: 1280px;
+    width: 1280px;
     height: auto;
     margin: 18px auto;
     overflow: hidden;
@@ -548,7 +548,7 @@ a {
 }
 
 .wrap {
-    max-width: 1200px;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -954,7 +954,7 @@ button:hover span {
 
 
 /******MEDIA EFECTO******************************************/
-
+/*
 @media (max-width: 1920px) {
 
     .container {
@@ -1046,9 +1046,9 @@ button:hover span {
 
 @media (max-width: 1280px) {
 
-    /*--.botonCelular{
+    --.botonCelular{
         display: none;
-    }--*/
+    }--
 
     .item2 {
         bottom: -1558px;
@@ -1128,6 +1128,7 @@ button:hover span {
 
 }
 
+
 @media (max-width: 1130px) {
 
     .item2 {
@@ -1189,7 +1190,7 @@ button:hover span {
         padding-top: 0;
         margin-top: 6%;
     }
-}
+}*/
 
 @media (max-width: 960px) {
 
@@ -1206,7 +1207,7 @@ button:hover span {
 
     .hero {
         position: relative;
-        height: 47vh;
+        height: 100%;
         justify-content: center;
         align-items: center;
         color: #fff;
@@ -1243,7 +1244,8 @@ button:hover span {
         padding: 0;
         display: block;
         height: 19vh;
-        width: 32vh;
+        width: 6%;
+        height: 100%;
         border: 10px ridge black;
     }
 
@@ -1282,8 +1284,8 @@ button:hover span {
         margin: 0;
         padding: 0;
         display: block;
-        height: 16vh;
-        width: 24vh;
+        height: 100%;
+        width: 6%;
         border: 10px ridge black;
     }
 
@@ -1291,7 +1293,6 @@ button:hover span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra los elementos horizontalmente */
         position: relative;
         top: 0px;
         margin-top: 55%;
@@ -1302,38 +1303,30 @@ button:hover span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra los elementos horizontalmente */
         justify-content: center;
-        /* Centra los elementos verticalmente */
         text-align: justify;
-        /* Alinea el texto al centro */
     }
 
     .descripcion-quienesSomos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra los elementos horizontalmente */
         text-align: justify;
-        /* Alinea el texto al centro */
     }
 
     .texto__descripcion-quienesSomos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra los elementos horizontalmente */
         text-align: justify;
-        /* Alinea el texto al centro */
     }
 
     .quienesSomosFotoVideo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra los elementos horizontalmente */
         justify-content: center;
-        /* Centra los elementos verticalmente */
+
 
     }
 
@@ -1353,7 +1346,7 @@ button:hover span {
 
     .slider-box-imagenes img {
         width: 100%;
-        /*border-radius: 10%;*/
+
         height: 100%;
     }
 
@@ -1397,10 +1390,10 @@ button:hover span {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .hero {
+   /* .hero {
         height: 20vh;
     }
-
+*/
     .item2 {
         padding: 5px;
         border: 3px solid transparent;
@@ -1436,7 +1429,7 @@ button:hover span {
         z-index: auto;
     }
 
-    .hero {
+    /*.hero {
         position: relative;
         height: 1vh;
         justify-content: center;
@@ -1444,7 +1437,7 @@ button:hover span {
         color: #fff;
         text-align: center;
         padding: 25px;
-    }
+    }*/
 
     .quienesSomos {
         display: flex;
@@ -1466,7 +1459,7 @@ button:hover span {
 
     .hero {
         position: relative;
-        height: 20vh;
+        height: 34%;
         justify-content: center;
         align-items: center;
         color: #fff;
@@ -1490,20 +1483,18 @@ button:hover span {
         width: 300px;
     }
 
-    .quienesSomos-video {
-        width: 21vh;
-    }
+
 
     .menu {
         text-align: center;
         width: 300px;
         margin: -7px auto;
         position: relative;
-        top: 269px;
+        top: -42%;
     }
 
     .moverboton {
-        margin-top: 78%;
+        margin-top: -96%;
     }
 
     .rombo {
@@ -1519,48 +1510,10 @@ button:hover span {
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 33px;
+        top: -36%;
         text-align: justify;
     }
 }
 
 
 
-
-
-/*
-@media (max-width: 900px),
-@media (max-width: 950px),
-@media (max-width: 1024px) {
-    .hero {
-        position: relative;
-        height: 38vh;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        text-align: center;
-        padding: 25px;
-    }
-
-    .quienesSomos-video {
-        margin: 0;
-        padding: 0;
-        display: block;
-        height: 49vh;
-        width: 35vh;
-        border: 10px ridge black;
-    }
-
-    .quienesSomos {
-        text-align: center;
-    }
-
-    .item2 {
-        padding: 0;
-        border: 3px solid white;
-        height: 404px;
-        width: 400px;
-        margin: 0 auto;
-    }
-}
-*/
