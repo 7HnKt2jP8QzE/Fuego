@@ -309,10 +309,11 @@ footer .socials a {
 
 .quienesSomos {
     width: 1201px;
-    width: 95%;
-    margin: 0 auto;
-    /* padding: 0 20px;*/
+    width: 100%;
+    margin: 0px auto;
+    /* padding: 0 20px; */
     padding-top: 1%;
+    text-align: center;
 }
 
 .quienesSomos-Puertas {
@@ -400,7 +401,7 @@ footer .socials a {
     padding: 0;
     display: block;
     height: 100%;;
-    width: 83vh;
+    width: 55vh;
     border: 10px ridge black;
 
 }
@@ -504,7 +505,7 @@ footer .socials a {
 .menu {
     text-align: center;
     width: auto;
-    padding: 14px;
+    padding: 73px;
 }
 
 .menu h2 {
@@ -746,9 +747,9 @@ button:hover span {
     height: 333px;
     width: 400px;
     position: absolute;
-    bottom: -1966px;
+    bottom: -1735px;
     z-index: 1000;
-    left: 775px;
+    left: 1006px;
 }
 
 
