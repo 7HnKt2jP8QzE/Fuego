@@ -130,9 +130,14 @@
   <div class="blanco">
 
     <!--INICIO MENU-->
+    <!--INICIO MENU-->
     <header>
       <div class="logo"><a href="index.html">Fuego</a></div>
-      <div class="hamburger"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav class="nav-bar">
         <ul>
           <li>
@@ -154,6 +159,7 @@
       </nav>
   </div>
   </header>
+  <!--FIN MENU-->
   <!--FIN MENU-->
 
   <section id="inicio" class="hero">
@@ -303,11 +309,14 @@
 
     <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
     <script>
+      console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
       hamburger = document.querySelector(".hamburger");
-      hamburger.onclick = function () {
-        navBar = document.querySelector(".nav-bar");
-        navBar.classList.toggle("active");
-      }
+          hamburger.onclick = function(){
+              navBar = document.querySelector(".nav-bar");
+              navBar.classList.toggle("active");
+          }
+  
+  
     </script>
 </body>
 

@@ -17,23 +17,27 @@
     <!--INICIO MENU-->
     <header>
       <div class="logo"><a href="index.html">Fuego</a></div>
-      <div class="hamburger"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav class="nav-bar">
         <ul>
           <li>
             <a href="index.html" class="active">Inicio</a>
           </li>
           <li>
-            <a href="#nosotros">Nosotros</a>
+            <a href="index.html/#nosotros">Nosotros</a>
           </li>
           <li>
-            <a href="#menu">Menu</a>
+            <a href="index.html/#menu">Menu</a>
           </li>
           <li>
             <a href="certificado.html">Certificados</a>
           </li>
           <li>
-            <a href="#contacto">Contactanos</a>
+            <a href="index.html/#contacto">Contactanos</a>
           </li>
         </ul>
       </nav>
@@ -281,22 +285,14 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const button = document.getElementById('menuButton');
-
-      button.addEventListener('click', function (event) {
-        const width = window.innerWidth;
-        console.log(width);
-
-        if (width <= 390) {
-          // Evitar el comportamiento por defecto del enlace
-          window.location.href = 'menuCelular.html';
-        } else {
-          event.preventDefault();
-          window.location.href = 'menu.html';
+    console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
+    hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
         }
-      });
-    });
+
+
   </script>
 </body>
 

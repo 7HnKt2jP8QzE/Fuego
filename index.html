@@ -21,7 +21,11 @@
     <!--INICIO MENU-->
     <header>
       <div class="logo"><a href="index.html">Fuego</a></div>
-      <div class="hamburger"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav class="nav-bar">
         <ul>
           <li>
@@ -336,6 +340,11 @@
 
   <script>
     console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
+    hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
 
 
   </script>

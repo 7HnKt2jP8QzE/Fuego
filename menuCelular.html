@@ -14,31 +14,36 @@
 <body>
     <div class="blanco">
 
-        <!--INICIO MENU-->
-        <header>
-            <div class="logo"><a href="index.html">Fuego</a></div>
-            <div class="hamburger"></div>
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#nosotros">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="certificado.html">Certificados</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contactanos</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--FIN MENU-->
+       <!--INICIO MENU-->
+    <header>
+        <div class="logo"><a href="index.html">Fuego</a></div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="index.html" class="active">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html/#nosotros">Nosotros</a>
+            </li>
+            <li>
+              <a href="index.html/#menu">Menu</a>
+            </li>
+            <li>
+              <a href="certificado.html">Certificados</a>
+            </li>
+            <li>
+              <a href="index.html/#contacto">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    </header>
+    <!--FIN MENU-->
 
         <div class="web">
             <section id="inicio" class="hero">
@@ -183,12 +188,15 @@
             <script src="scriptMenu.js"></script>
             <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
             <script>
-                const hamburger = document.querySelector(".hamburger");
-                hamburger.onclick = function () {
-                    const navBar = document.querySelector(".nav-bar");
-                    navBar.classList.toggle("active");
-                }
-            </script>
+                console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
+                hamburger = document.querySelector(".hamburger");
+                    hamburger.onclick = function(){
+                        navBar = document.querySelector(".nav-bar");
+                        navBar.classList.toggle("active");
+                    }
+            
+            
+              </script>
 </body>
 
 </html>
