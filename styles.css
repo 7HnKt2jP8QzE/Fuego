@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 @font-face {
     font-family: 'MiFuente';
     src: url('./castlefire/Castlefire.otf') format('truetype');
@@ -25,13 +27,18 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+ .web{
+    /*background: skyblue;*/
+    width: auto;
+ }
 .blanco {
     padding: 10px;
     height: auto;
     width: 100%;
 
 }
+
+
 
 header{
     width: 100%;
@@ -184,12 +191,16 @@ header{
     /* Centra verticalmente los elementos */
 
     position: relative;
-    top: -97px;
+    top: -52px;
     width: 16%;
     margin: 0 auto;
 }
 
-/* Estilos para el círculo externo (circulo1) */
+.container2{
+    top:72px;
+}
+
+
 .circulo1 {
     width: 170px;
     /* Ancho del círculo */
@@ -296,7 +307,6 @@ footer .socials a {
 }
 
 
-
 .quienesSomos {
     width: 1201px;
     width: 95%;
@@ -316,7 +326,7 @@ footer .socials a {
 .quienesSomos_info {
     display: inline-block;
     text-align: center;
-    width: 531px;
+    width: 520px;
     flex: 1;
     margin: 0 25px;
 
@@ -398,7 +408,7 @@ footer .socials a {
 
 
 .slider-box {
-    width: 1280px;
+    width: auto;
     height: auto;
     margin: 18px auto;
     overflow: hidden;
@@ -406,16 +416,9 @@ footer .socials a {
 }
 
 .slider-box-imagenes {
-    width: ;
+    width: 100%;
     height: auto;
     margin: -193px auto;
-    overflow: hidden;
-}
-
-.slider-box {
-    width: 1280px;
-    height: auto;
-    margin: 18px auto;
     overflow: hidden;
 }
 
@@ -471,12 +474,12 @@ footer .socials a {
 }
 
 
+
 .mapa {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* Ajusta la altura según sea necesario */
     padding-bottom: 105px;
     z-index: 1000;
 }
@@ -500,7 +503,8 @@ footer .socials a {
 
 .menu {
     text-align: center;
-    padding-top: 8%;
+    width: auto;
+    padding: 14px;
 }
 
 .menu h2 {
@@ -721,6 +725,10 @@ button:hover span {
 
 }
 
+.botonCelular{
+    display: none;
+  }
+
 /* Asegúrate de que .contactanosFranja esté en el fondo */
 .contactanosFranja {
     background: url('https://png.pngtree.com/thumb_back/fh260/background/20210604/pngtree-luxury-black-background-with-shiny-dots-image_725940.jpg');
@@ -738,16 +746,18 @@ button:hover span {
     height: 333px;
     width: 400px;
     position: absolute;
-    right: 79px;
-    bottom: -2142px;
+    bottom: -1966px;
     z-index: 1000;
+    left: 775px;
 }
 
 
 .contactanosFranja__Info-Tarjeta {
-    margin: 10px;
+    margin: 10px auto 10px;
     padding: 8px;
     font-size: 19px;
+    /* text-align: center; */
+    width: 266px;
 }
 
 
@@ -965,12 +975,12 @@ button:hover span {
 
 /******MEDIA EFECTO******************************************/
 
-
+/*
 @media (max-width: 1920px){
     .web{
         width: 1366px;
         margin: 0 auto;
-        /*background: skyblue;*/
+        background: skyblue;
     }
 
     .container2{
@@ -1030,18 +1040,14 @@ button:hover span {
       }
 }
 
-
+*/
 @media (max-width: 1000px){
 
     .circulo1 {
         width: 170px;
-        /* Ancho del círculo */
         height: 170px;
-        /* Alto del círculo */
         background-color: transparent;
-        /* Color de fondo */
         border-radius: 50%;
-        /* Hace que el contenedor sea un círculo */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1052,7 +1058,7 @@ button:hover span {
     .web{
         width: 390px;
         margin: 0 auto;
-        /*background: skyblue;*/
+        background: skyblue;
     }
 
 
@@ -1123,7 +1129,6 @@ button:hover span {
     .flame {
         width: 92px;
         height: auto;
-        /*animation: flicker 1s infinite alternate;*/
         position: relative;
         top: 4px;
       }
@@ -1166,7 +1171,6 @@ button:hover span {
         padding: 0;
         margin: 0;
         
-        /*animation: slide 40s infinite alternate ease-in-out;*/
       }
 
       .wrap {
@@ -1201,3 +1205,4 @@ button:hover span {
         left: 50px;
       }
 }
+
