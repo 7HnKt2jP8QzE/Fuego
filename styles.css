@@ -984,7 +984,7 @@ button:hover span {
         padding: 0;
         display: block;
         height: 100%;
-        width: 58vh;
+        width: 39vh;
         border: 10px ridge black;
       }
 
@@ -999,7 +999,7 @@ button:hover span {
         width: 400px;
         position: absolute;
         right: 339px;
-        bottom: -1679px;
+        bottom: -1279px;
         z-index: 1000;
       }
 
