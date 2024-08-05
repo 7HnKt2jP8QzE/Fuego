@@ -1105,7 +1105,7 @@ button:hover span {
     .descripcion-quienesSomos {
         position: relative;
         top: 0px;
-        margin: 44px 0px 0px 0;
+        margin: 44px 26px 0px 0;
     }
 
     .horario {
@@ -1123,9 +1123,9 @@ button:hover span {
     .menu {
         text-align: center;
         width: 300px;
-        margin: -7px auto;
+        /*margin: -7px auto;
         position: relative;
-        top: -42%;
+        top: -42%;*/
     }
 
     
@@ -1216,5 +1216,16 @@ button:hover span {
         position: relative;
         left: 50px;
       }
+
+
+      .tarjeta-rest {
+        background-repeat: no-repeat;
+        height: 291px;
+        border-radius: 6px;
+        padding: 1rem .5rem;
+        display: flex;
+        align-items: center;
+        width: 242px;
+    }
 }
 
