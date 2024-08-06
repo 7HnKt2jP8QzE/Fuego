@@ -1096,6 +1096,10 @@ button:hover span {
 
     }
 
+    iframe {
+        width: 100%;
+    }
+
 }
 
 
