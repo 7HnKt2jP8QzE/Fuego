@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 @font-face {
     font-family: 'MiFuente';
     src: url('./castlefire/Castlefire.otf') format('truetype');
@@ -26,6 +28,11 @@ a {
     color: inherit;
 }
 
+.web {
+    /*background: skyblue;*/
+    width: auto;
+}
+
 .blanco {
     padding: 10px;
     height: auto;
@@ -33,7 +40,8 @@ a {
 
 }
 
-header{
+
+header {
     width: 100%;
     height: 80px;
     background: linear-gradient(to bottom, #62162f, #cc0000);
@@ -43,13 +51,13 @@ header{
     padding: 0 100px;
 }
 
-.logo{
+.logo {
     font-size: 28px;
     font-weight: bold;
     color: #fefefe;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
@@ -57,7 +65,7 @@ header{
     display: flex;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
     display: block;
     color: #fefefe;
     font-size: 20px;
@@ -67,44 +75,44 @@ header{
     margin: 0 5px;
 }
 
-.nav-bar ul li a:hover{
+.nav-bar ul li a:hover {
     color: #000000;
     background: #fefefe;
 }
 
-.nav-bar ul li a.active{
+.nav-bar ul li a.active {
     color: #000000;
     background: #fefefe;
 
 }
 
-@media only screen and (max-width: 1320px){
-    header{
+@media only screen and (max-width: 1320px) {
+    header {
         padding: 0 50px;
     }
 }
 
-@media only screen and (max-width: 1100px){
-    header{
+@media only screen and (max-width: 1100px) {
+    header {
         padding: 0 30px;
     }
-    
+
 }
 
-@media only screen and (max-width: 900px){
-    .hamburger{
+@media only screen and (max-width: 900px) {
+    .hamburger {
         display: block;
         cursor: pointer;
     }
 
-    .hamburger .line{
+    .hamburger .line {
         width: 30px;
         height: 3px;
         background: #fefefe;
         margin: 6px 0;
     }
 
-    .nav-bar{
+    .nav-bar {
         height: 0px;
         position: absolute;
         top: 80px;
@@ -116,34 +124,34 @@ header{
         overflow: hidden;
     }
 
-    .nav-bar.active{
+    .nav-bar.active {
         height: 450px;
     }
 
-    .nav-bar ul{
+    .nav-bar ul {
         display: block;
         width: fit-content;
         margin: 80px auto 0 auto;
         text-align: center;
         /*transition: 0.5s;
         opacity: 0;*/
-        
+
     }
 
-    .nav-bar.active{
+    .nav-bar.active {
         opacity: 1;
         z-index: 1000;
     }
 
-    .nav-bar ul li a{
+    .nav-bar ul li a {
         margin-bottom: 12px;
         color: red;
         z-index: 1000;
-        
+
     }
 
 
-    
+
 }
 
 
@@ -151,7 +159,7 @@ header{
 
 .hero {
     position: relative;
-    height: 77vh;
+    height: 100%;
     /* Full viewport height */
 
     justify-content: center;
@@ -184,12 +192,16 @@ header{
     /* Centra verticalmente los elementos */
 
     position: relative;
-    top: -97px;
+    top: -52px;
     width: 16%;
     margin: 0 auto;
 }
 
-/* Estilos para el círculo externo (circulo1) */
+.container2 {
+    top: 72px;
+}
+
+
 .circulo1 {
     width: 170px;
     /* Ancho del círculo */
@@ -296,13 +308,13 @@ footer .socials a {
 }
 
 
-
 .quienesSomos {
-    max-width: 1201px;
-    width: 95%;
-    margin: 0 auto;
-    /* padding: 0 20px;*/
+    width: 1201px;
+    width: 100%;
+    margin: 0px auto;
+    /* padding: 0 20px; */
     padding-top: 1%;
+    text-align: center;
 }
 
 .quienesSomos-Puertas {
@@ -316,7 +328,7 @@ footer .socials a {
 .quienesSomos_info {
     display: inline-block;
     text-align: center;
-    width: 531px;
+    width: 520px;
     flex: 1;
     margin: 0 25px;
 
@@ -324,13 +336,17 @@ footer .socials a {
 
 .imagenesContenedor {
     display: flex;
-    justify-content: space-around; /* Ajusta el espaciado entre las imágenes */
-    align-items: center; /* Alinea verticalmente las imágenes */
+    justify-content: space-around;
+    /* Ajusta el espaciado entre las imágenes */
+    align-items: center;
+    /* Alinea verticalmente las imágenes */
 }
 
 .imagenInfo img {
-    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto; /* Mantiene la proporción de las imágenes */
+    width: 200px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
 }
 
 
@@ -385,8 +401,9 @@ footer .socials a {
     margin: 0;
     padding: 0;
     display: block;
-    height: 49vh;
-    width: 83vh;
+    height: 100%;
+    ;
+    width: 75vh;
     border: 10px ridge black;
 
 }
@@ -394,24 +411,18 @@ footer .socials a {
 
 
 .slider-box {
-    /*max-width: 1280px;
+    width: auto;
     height: auto;
     margin: 18px auto;
     overflow: hidden;
-    border-style: 1px solid black;TRABAJAR EN EL BORDE*/
+    border-style: 1px solid black;
+    /*Trabajar en el borde*/
 }
 
 .slider-box-imagenes {
-    max-width: 1202px;
+    width: 100%;
     height: auto;
     margin: -193px auto;
-    overflow: hidden;
-}
-
-.slider-box {
-    max-width: 1280px;
-    height: auto;
-    margin: 18px auto;
     overflow: hidden;
 }
 
@@ -467,12 +478,12 @@ footer .socials a {
 }
 
 
+
 .mapa {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* Ajusta la altura según sea necesario */
     padding-bottom: 105px;
     z-index: 1000;
 }
@@ -496,7 +507,8 @@ footer .socials a {
 
 .menu {
     text-align: center;
-    padding-top: 8%;
+    width: auto;
+    padding: 73px;
 }
 
 .menu h2 {
@@ -533,8 +545,8 @@ a {
 }
 
 .imagen4 {
-    background: url(imagenes/Chuleta\ de\ cordero.JPG)center;
-    background-position: 46% center;
+    background: url(imagenes/pescado.jpg)center;
+    background-position: 60% center;
     background-size: cover;
 }
 
@@ -546,7 +558,7 @@ a {
 }
 
 .wrap {
-    max-width: 1200px;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -717,6 +729,10 @@ button:hover span {
 
 }
 
+.botonCelular {
+    display: none;
+}
+
 /* Asegúrate de que .contactanosFranja esté en el fondo */
 .contactanosFranja {
     background: url('https://png.pngtree.com/thumb_back/fh260/background/20210604/pngtree-luxury-black-background-with-shiny-dots-image_725940.jpg');
@@ -730,20 +746,24 @@ button:hover span {
 
 .item2 {
     padding: 5px;
-    border: -3px solid white;
+    /*border: -3px solid white;*/
     height: 333px;
     width: 400px;
     position: absolute;
-    right: 79px;
-    bottom: -1738px;
+    /*      left: 1184px;
+    bottom: -10482px;*/
     z-index: 1000;
-  }
+    margin: 0 0 -367px 197px;
+    /*top: 2487px;*/
+}
 
 
 .contactanosFranja__Info-Tarjeta {
-    margin: 10px;
+    margin: 10px auto 10px;
     padding: 8px;
     font-size: 19px;
+    /* text-align: center; */
+    width: 266px;
 }
 
 
@@ -786,43 +806,12 @@ button:hover span {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
     text-align: center;
     width: 300px;
-  }
-
-.horario h2 {
-    background: linear-gradient(90deg, #FFD700, #FFEC8B);
-    margin-bottom: 20px;
-    text-shadow: 
-        0.1px 0.1px 0px #000,
-        -0.1px -0.1px 0px #000,
-        0.1px -0.1px 0px #000,
-        -0.1px 0.1px 0px #000,
-        0.1px 0px 0px #000,
-        0px 0.1px 0px #000,
-        -0.1px 0px 0px #000,
-        0px -0.1px 0px #000;
-}
-
-
-
-
-.dia {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-}
-
-.horario {
-    margin: 23px auto;
-    padding: 20px;
-    background-color: #dbdcdd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
-    text-align: center;
-    width: 300px;
 }
 
 .horario h2 {
     background: linear-gradient(90deg, #FFD700, #FFEC8B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
     text-shadow:
         0.1px 0.1px 0px #000,
@@ -850,6 +839,25 @@ button:hover span {
     font-weight: bold;
     color: #333;
 }
+
+.fanjaTama {
+    height: 286px;
+    position: relative;
+    top: -326px;
+    z-index: -1;
+    margin-bottom: -300px;
+}
+
+.medida {
+    font-size: 18px;
+    background: #cc0000;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 
 
@@ -979,6 +987,8 @@ button:hover span {
 
 
 
+
+/******MEDIA EFECTO******************************************/
 
 
 @media (max-width: 2800px) {
@@ -1285,6 +1295,3 @@ button:hover span {
         width: 242px;
     }
 }
-
-
-
