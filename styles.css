@@ -746,13 +746,15 @@ button:hover span {
 
 .item2 {
     padding: 5px;
-    border: -3px solid white;
+    /*border: -3px solid white;*/
     height: 333px;
     width: 400px;
     position: absolute;
-    bottom: -1735px;
+    /*      left: 1184px;
+    bottom: -10482px;*/
     z-index: 1000;
-    left: 777px;
+    margin: 0 0 -367px 197px;
+    /*top: 2487px;*/
 }
 
 
@@ -1024,7 +1026,7 @@ button:hover span {
         /*      left: 1184px;
         bottom: -10482px;*/
         z-index: 1000;
-        margin: 0 0 -387px 197px;
+        margin: 0 0 -63px 194px;
         /*top: 2487px;*/
     }
 
