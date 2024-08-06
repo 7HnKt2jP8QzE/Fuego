@@ -266,6 +266,7 @@
         </div>
       </div>
 
+
       <div class="item2 mapa">
 
         <div class="mapGoogle">
@@ -275,7 +276,19 @@
             height="345"></iframe>
         </div>
       </div>
-
+  
+  
+      
+  
+  
+  
+  
+    </div>
+  
+   
+  
+  
+    <footer class="foot">
       <div class="contactanosFranja contenedor">
         <div class="item contactanosFranja__Info">
           <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Insta"><a href="#"><i
@@ -289,53 +302,50 @@
           <div class="contactanosFranja__Info-Tarjeta contactanosFranja__Info-Direccion"><i
               class="fa-solid fa-location-dot"></i> San Lorenzo 9, 28004, Madrid</div>
         </div>
-
+  
         <div class="rombo">
           <span>Contáctanos</span>
         </div>
-
+  
       </div>
-    </div>
-  </div>
-
-
-
-
-
-  <footer>
-    <p>&copy; 2024 Fuego. Todos los derechos reservados.</p>
-    <div class="socials">
-      <a href="#">Whatsapp</a>
-      <a href="#">Instagram</a>
-      <a href="#">Email</a>
-    </div>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/dafd109768.js" crossorigin="anonymous"></script>
-  <script>
-    console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
-    hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function () {
-      navBar = document.querySelector(".nav-bar");
-      navBar.classList.toggle("active");
-    }
-
-    function mostrarAncho() {
-      const ancho = window.innerWidth;
-      const div = document.querySelector('.medida');
-      div.innerHTML = `El ancho de la ventana es: ${ancho}px`;
-    }
-
-    // Llama a la función cuando la página se cargue
-    window.onload = mostrarAncho;
-
-    // Actualiza el ancho cuando se redimensiona la ventana
-    window.onresize = mostrarAncho;
-
-
-
-
-  </script>
-</body>
-
-</html>
+  
+    </footer>
+  
+    <br>
+  
+    <footer>
+      <p>&copy; 2024 Fuego. Todos los derechos reservados.</p>
+      <div class="socials">
+        <a href="#">Whatsapp</a>
+        <a href="#">Instagram</a>
+        <a href="#">Email</a>
+      </div>
+    </footer>
+  
+    <script>
+      console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      }
+  
+      function mostrarAncho() {
+        const ancho = window.innerWidth;
+        const div = document.querySelector('.medida');
+        div.innerHTML = `El ancho de la ventana es: ${ancho}px`;
+      }
+  
+      // Llama a la función cuando la página se cargue
+      window.onload = mostrarAncho;
+  
+      // Actualiza el ancho cuando se redimensiona la ventana
+      window.onresize = mostrarAncho;
+  
+  
+  
+  
+    </script>
+  </body>
+  
+  </html>

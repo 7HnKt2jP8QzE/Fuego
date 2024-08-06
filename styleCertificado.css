@@ -293,15 +293,26 @@ section h2 {
     margin-bottom: 20px;
 }
 
-
 footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
     text-align: center;
 }
+.foot {
+    padding: 0px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
 
 footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.foot .socials a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
