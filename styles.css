@@ -1133,6 +1133,7 @@ button:hover span {
 
 
 @media (max-width: 1000px) {
+    
 
     .circulo1 {
         width: 170px;
@@ -1149,7 +1150,7 @@ button:hover span {
     .web {
         width: 370px;
         margin: 0 auto;
-        /*background: skyblue;*/
+        background: skyblue;
     }
 
 
@@ -1185,8 +1186,8 @@ button:hover span {
     .descripcion-quienesSomos {
         position: relative;
         top: 0px;
-        margin: 44px 26px 0px 0;
-    }
+        margin: 0px 21px 69px 20px;
+      }
 
     .horario {
         margin: 40px auto;
@@ -1232,24 +1233,26 @@ button:hover span {
         position: relative;
         top: -36%;
         text-align: justify;
-    }
+        width: 368px;
+        margin: 1px;
+      }
 
     .quienesSomos-video {
         margin: 0;
         padding: 0;
         display: block;
-        height: 318px;
-        width: 496px;
+        height: 232px;
+        width: 369px;
         border: 10px ridge black;
-    }
+      }
 
-    .quienesSomos_info {
+      .quienesSomos_info {
         display: inline-block;
         text-align: center;
-        width: 100%;
+        width: 375px;
         flex: 1;
-        margin: 0 25px;
-    }
+        margin: 0px 0px;
+      }
 
     .slider-box {
         width: 100%;
@@ -1290,6 +1293,10 @@ button:hover span {
         display: none;
     }
 
+    .botonCelular{
+        display: block;
+    }
+
     .contactanosFranja__Info-Tarjeta {
         margin: 10px;
         padding: 8px;
@@ -1308,4 +1315,12 @@ button:hover span {
         align-items: center;
         width: 242px;
     }
+
+    .dosImg, .unaImg {
+        display: block;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+
 }

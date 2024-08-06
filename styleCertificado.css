@@ -1155,6 +1155,8 @@ button:hover span {
     }
     
 
+    
+
 
 
 }
@@ -1335,6 +1337,20 @@ button:hover span {
         width: 242px;
     }
 
+
+
+    .imagenInfo img {
+        width: 300px;
+        height: auto;
+        margin-top: 15px;
+        border-style: solid;
+      }
+
+      .dosImg, .unaImg {
+        display: block;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
     
 
     
