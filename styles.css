@@ -984,13 +984,12 @@ button:hover span {
 
 
 
-
 /******MEDIA EFECTO******************************************/
 
-/*
-@media (max-width: 1920px){
+
+@media (max-width: 2800px){
     .web{
-        width: 1366px;
+        width: 1100px;
         margin: 0 auto;
         background: skyblue;
     }
@@ -1005,8 +1004,8 @@ button:hover span {
         margin: 0;
         padding: 0;
         display: block;
-        height: 100%;
-        width: 39vh;
+        height: 345px;
+        width: 491px;
         border: 10px ridge black;
       }
 
@@ -1016,13 +1015,15 @@ button:hover span {
 
       .item2 {
         padding: 5px;
-        border: -3px solid white;
+        /*border: -3px solid white;*/
         height: 333px;
         width: 400px;
         position: absolute;
-        right: 339px;
-        bottom: -1279px;
+/*      left: 1184px;
+        bottom: -10482px;*/
         z-index: 1000;
+        margin: 0 0 -63px 410px;
+        /*top: 2487px;*/
       }
 
       .contactanosFranja__Info-Tarjeta {
@@ -1050,9 +1051,50 @@ button:hover span {
         animation: borderColorChange 3s infinite;
         left: -111px;
       }
+
+      .quienesSomos {
+        width: 1077px;
+        margin: 89px auto;
+        /*padding: 0 20px;
+        padding-top: 1%;*/
+        text-align: center;
+      }
+
+
+      .menu {
+        text-align: center;
+        width: auto;
+        padding: 43px;
+        margin-top: -65px;
+      }
+
+      .slider-box {
+        width: 497px;
+        /*height: auto;
+        margin: 18px auto;
+        overflow: hidden;
+        border-style: 1px solid black;*/
+      }
+
+      .quienesSomos_info {
+        display: inline-block;
+        text-align: center;
+        width: 471px;
+        flex: 1;
+        margin: 0 25px;
+      }
+
+      .slider-box ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 367px;
+        
+      }
+
 }
 
-*/
+
 @media (max-width: 1000px){
 
     .circulo1 {
@@ -1158,8 +1200,8 @@ button:hover span {
         margin: 0;
         padding: 0;
         display: block;
-        height: 100%;
-        width: 46vh;
+        height: 318px;
+        width: 496px;
         border: 10px ridge black;
       }
 
@@ -1228,4 +1270,6 @@ button:hover span {
         width: 242px;
     }
 }
+
+
 
