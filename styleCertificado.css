@@ -963,13 +963,11 @@ button:hover span {
     .web{
         width: 1100px;
         margin: 0 auto;
-        background: skyblue;
+        /*background: skyblue;*/
     }
 
-    .container2{
-        position: relative;
-        top: 80px;
-
+    .container2 {
+        top: 72px;
     }
 
     .quienesSomos-video {
