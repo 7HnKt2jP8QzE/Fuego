@@ -333,26 +333,26 @@ footer .socials a {
     margin: 0 25px;
 
 }
-
 .imagenesContenedor {
-    display: flex;
     justify-content: space-around;
-    /* Ajusta el espaciado entre las imágenes */
-    align-items: center;
-    /* Alinea verticalmente las imágenes */
+    text-align: center;
+}
+.dosImg, .unaImg{
+    margin: 0 auto;
 }
 
 .imagenInfo img {
     width: 200px;
-    /* Ajusta el tamaño de las imágenes según sea necesario */
     height: auto;
-    /* Mantiene la proporción de las imágenes */
-}
+    margin: 0 auto;
+    margin-top: 15px;
+    border-style: solid;
+  }
 
 
 
 
-.descripcion-quienesSomos h2 {
+  .descripcion-quienesSomos h2 {
     font-size: 45px;
     margin-bottom: 0;
     margin-top: 38px;
@@ -499,8 +499,6 @@ footer .socials a {
     animation: destello 2s infinite;
     pointer-events: none;
 }
-
-
 
 
 /*Tarjeta De Menu*/
@@ -860,9 +858,6 @@ button:hover span {
 
 
 
-
-
-
 /**********************@keyFrame****************************************************/
 
 
@@ -988,6 +983,7 @@ button:hover span {
 
 
 
+
 /******MEDIA EFECTO******************************************/
 
 
@@ -1031,7 +1027,7 @@ button:hover span {
         display: none;
     }
 
-    .item2 {
+      .item2 {
         padding: 5px;
         /*border: -3px solid white;*/
         height: 333px;
@@ -1044,15 +1040,15 @@ button:hover span {
         /*top: 2487px;*/
     }
 
-    .contactanosFranja__Info-Tarjeta {
+      .contactanosFranja__Info-Tarjeta {
         margin: 10px;
         padding: 8px;
         font-size: 19px;
         position: relative;
         left: 156px;
-    }
+      }
 
-    .rombo {
+      .rombo {
         width: 115px;
         height: 115px;
         border: 4px solid #FFC300;
@@ -1068,57 +1064,92 @@ button:hover span {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         animation: borderColorChange 3s infinite;
         left: -111px;
-    }
+      }
 
-    .quienesSomos {
+      .quienesSomos {
         width: 1077px;
         margin: 89px auto;
         /*padding: 0 20px;
         padding-top: 1%;*/
         text-align: center;
-    }
+      }
 
 
-    .menu {
+      .menu {
         text-align: center;
         width: auto;
         padding: 43px;
-        margin-top: -65px;
-    }
+        margin-top: 23px;
+      }
 
-    .slider-box {
+      .slider-box {
         width: 497px;
         /*height: auto;
         margin: 18px auto;
         overflow: hidden;
         border-style: 1px solid black;*/
-    }
+      }
 
-    .quienesSomos_info {
+      .quienesSomos_info {
         display: inline-block;
         text-align: center;
         width: 471px;
         flex: 1;
         margin: 0 25px;
-    }
+      }
 
-    .slider-box ul {
+      .slider-box ul{
         display: flex;
         padding: 0;
         margin: 0;
         width: 367px;
+        
+      }
 
-    }
-
-    iframe {
+      iframe {
         width: 100%;
         height: 303px;
     }
 
+     
+
+      .imagenInfo img {
+        width: 472px;
+        height: auto;
+        margin-top: 15px;
+        border-style: solid;
+      }
+
+      .dosImg, .unaImg {
+        display: flex;
+        justify-content: center; /* Centra las imágenes horizontalmente */
+        margin-bottom: 10px; /* Espacio entre las filas */
+    }
+    
+    .dosImg .imagenInfo {
+        flex: 1 1 45%; /* Las dos imágenes ocupan el 45% del contenedor principal */
+        margin: 5px;  /* Espacio entre las imágenes */
+    }
+    
+    .unaImg .imagenInfo {
+        flex: 0 0 90%; /* La tercera imagen ocupa el 90% del contenedor principal */
+        margin: 5px;
+    }
+    
+    .imagenInfo img {
+        width: 453px;
+        height: auto;
+        display: block;
+        margin-top: 60px;
+    }
+    
+
+
+
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px){
 
     .circulo1 {
         width: 170px;
@@ -1132,10 +1163,10 @@ button:hover span {
         z-index: 1;
     }
 
-    .web {
+    .web{
         width: 370px;
         margin: 0 auto;
-        /*background: skyblue;*/
+        background: skyblue;
     }
 
 
@@ -1148,13 +1179,12 @@ button:hover span {
         top: -52px;
         width: 16%;
         margin: 0 auto;
-    }
+      }
 
-    .slider-box img,
-    .slider-box-imagenes img {
+      .slider-box img, .slider-box-imagenes img {
         width: 100%;
         height: 100%;
-    }
+      }
 
 
 
@@ -1166,7 +1196,7 @@ button:hover span {
         color: #fff;
         text-align: center;
         padding: 25px;
-    }
+      }
 
     .descripcion-quienesSomos {
         position: relative;
@@ -1194,13 +1224,13 @@ button:hover span {
         top: -42%;*/
     }
 
-
+    
 
     .rombo {
         display: none;
     }
 
-    .container2 {
+    .container2 {    
         margin-top: 219px;
     }
 
@@ -1209,7 +1239,7 @@ button:hover span {
         height: auto;
         position: relative;
         top: 4px;
-    }
+      }
 
     .quienesSomos {
         display: flex;
@@ -1227,65 +1257,64 @@ button:hover span {
         height: 318px;
         width: 496px;
         border: 10px ridge black;
-    }
+      }
 
-    .quienesSomos_info {
+      .quienesSomos_info {
         display: inline-block;
         text-align: center;
         width: 100%;
         flex: 1;
         margin: 0 25px;
-    }
+      }
 
-    .slider-box {
+      .slider-box {
         width: 100%;
         height: auto;
         margin: 18px auto;
         overflow: hidden;
-    }
+      }
 
-    .slider-box ul,
-    .slider-box-imagenes ul {
+      .slider-box ul, .slider-box-imagenes ul {
         display: flex;
         padding: 0;
         margin: 0;
+        
+      }
 
-    }
-
-    .wrap {
+      .wrap {
         display: flex;
         flex-direction: column;
-    }
+      }
 
-    .item2 {
+      .item2 {
         padding: 5px;
         border: -3px solid white;
         height: 333px;
         width: 378px;
-        position: static;
+        position: static;    
         margin: 0 auto;
         margin-bottom: 39px;
         z-index: 1000;
-    }
+      }
 
-    iframe {
+      iframe{
         width: 100%;
-    }
+      }
 
-    .botonPantatalla {
+      .botonPantatalla{
         display: none;
-    }
+      }
 
-    .contactanosFranja__Info-Tarjeta {
+      .contactanosFranja__Info-Tarjeta {
         margin: 10px;
         padding: 8px;
         font-size: 19px;
         position: relative;
         left: 50px;
-    }
+      }
 
 
-    .tarjeta-rest {
+      .tarjeta-rest {
         background-repeat: no-repeat;
         height: 291px;
         border-radius: 6px;
@@ -1294,4 +1323,11 @@ button:hover span {
         align-items: center;
         width: 242px;
     }
+
+    
+
+    
 }
+
+
+
