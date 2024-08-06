@@ -992,6 +992,20 @@ button:hover span {
 
 
 @media (max-width: 2800px) {
+
+    .mapGoogle {
+        width: 600px;
+        /* Ancho del div que contiene el mapa */
+        height: 310px;
+        /* Alto del div que contiene el mapa */
+        position: relative;
+        /* Ajusta el posicionamiento según tus necesidades */
+        box-shadow: 0 0 40px rgba(36, 219, 19, 0.7);
+        animation: destello 2s infinite;
+        pointer-events: none;
+    }
+
+
     .web {
         width: 1100px;
         margin: 0 auto;
@@ -1026,7 +1040,7 @@ button:hover span {
         /*      left: 1184px;
         bottom: -10482px;*/
         z-index: 1000;
-        margin: -1px 0px 0px 743px;
+        margin: -19px 0px 0px 743px;
         /*top: 2487px;*/
     }
 
