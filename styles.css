@@ -1048,7 +1048,7 @@ button:hover span {
     .item2 {
         padding: 5px;
         /*border: -3px solid white;*/
-        height: 333px;
+        height: 359px;
         width: 400px;
         position: absolute;
         /*      left: 1184px;
@@ -1063,7 +1063,7 @@ button:hover span {
         padding: 8px;
         font-size: 19px;
         position: relative;
-        left: 156px;
+        left: 258px;
     }
 
     .rombo {
@@ -1126,7 +1126,7 @@ button:hover span {
 
     iframe {
         width: 100%;
-        height: 303px;
+        height: 348px;
     }
 
 }
@@ -1277,7 +1277,7 @@ button:hover span {
     .item2 {
         padding: 5px;
         border: -3px solid white;
-        height: 333px;
+        height: 326px;
         width: 378px;
         position: static;
         margin: 0 auto;
