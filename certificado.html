@@ -45,6 +45,8 @@
   </header>
   <!--FIN MENU-->
 
+  <div class="medida"> AQUI </div>
+
   <div class="web">
     <section id="inicio" class="hero">
       <div class="container">
@@ -103,14 +105,20 @@
   
   
     <div class="imagenesContenedor">
-      <div class="imagenInfo">
-        <img src="imagenes/Tehuda.jpg" alt="">
+      
+      <div class="dosImg">
+        <div class="imagenInfo">
+          <img src="imagenes/Tehuda.jpg" alt="">
+        </div>
+        <div class="imagenInfo">
+          <img src="imagenes/FuegoTenedor.jpg" alt="">
+        </div>
       </div>
-      <div class="imagenInfo">
-        <img src="imagenes/FuegoTenedor.jpg" alt="">
-      </div>
-      <div class="imagenInfo">
-        <img src="imagenes/Tehuda Madrid.jpg" alt="">
+
+      <div class="unaImg">
+        <div class="imagenInfo">
+          <img src="imagenes/Tehuda Madrid.jpg" alt="">
+        </div>
       </div>
     </div>
   
@@ -291,10 +299,24 @@
   <script>
     console.log(`Width: ${window.screen.width}, Height: ${window.screen.height}`);
     hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function(){
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+
+    function mostrarAncho() {
+      const ancho = window.innerWidth;
+      const div = document.querySelector('.medida');
+      div.innerHTML = `El ancho de la ventana es: ${ancho}px`;
+    }
+
+    // Llama a la función cuando la página se cargue
+    window.onload = mostrarAncho;
+
+    // Actualiza el ancho cuando se redimensiona la ventana
+    window.onresize = mostrarAncho;
+
+
 
 
   </script>

@@ -981,26 +981,15 @@ button:hover span {
 
 
 
+
 /******MEDIA EFECTO******************************************/
 
 
-
-@media (max-width: 1920px){
-
-    .hero {
-        position: relative;
-        height: 39vh;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        text-align: center;
-        padding: 25px;
-      }
-
+@media (max-width: 2800px){
     .web{
-        width: 1366px;
+        width: 1100px;
         margin: 0 auto;
-        /*background: skyblue;*/
+        background: skyblue;
     }
 
     .container2{
@@ -1013,8 +1002,8 @@ button:hover span {
         margin: 0;
         padding: 0;
         display: block;
-        height: 100%;
-        width: 58vh;
+        height: 345px;
+        width: 491px;
         border: 10px ridge black;
       }
 
@@ -1023,15 +1012,17 @@ button:hover span {
       }
 
       .item2 {
-    padding: 5px;
-    border: -3px solid white;
-    height: 333px;
-    width: 400px;
-    position: absolute;
-    right: 339px;
-    bottom: -1054px;
-    z-index: 1000;
-  }
+        padding: 5px;
+        /*border: -3px solid white;*/
+        height: 333px;
+        width: 400px;
+        position: absolute;
+/*      left: 1184px;
+        bottom: -10482px;*/
+        z-index: 1000;
+        margin: 0 0 -63px 410px;
+        /*top: 2487px;*/
+      }
 
       .contactanosFranja__Info-Tarjeta {
         margin: 10px;
@@ -1058,4 +1049,235 @@ button:hover span {
         animation: borderColorChange 3s infinite;
         left: -111px;
       }
+
+      .quienesSomos {
+        width: 1077px;
+        margin: 89px auto;
+        /*padding: 0 20px;
+        padding-top: 1%;*/
+        text-align: center;
+      }
+
+
+      .menu {
+        text-align: center;
+        width: auto;
+        padding: 43px;
+        margin-top: -65px;
+      }
+
+      .slider-box {
+        width: 497px;
+        /*height: auto;
+        margin: 18px auto;
+        overflow: hidden;
+        border-style: 1px solid black;*/
+      }
+
+      .quienesSomos_info {
+        display: inline-block;
+        text-align: center;
+        width: 471px;
+        flex: 1;
+        margin: 0 25px;
+      }
+
+      .slider-box ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 367px;
+        
+      }
+
+      .hero {
+        position: relative;
+        height: 42vh;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+      }
+
 }
+
+
+@media (max-width: 1000px){
+
+    .circulo1 {
+        width: 170px;
+        height: 170px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .web{
+        width: 370px;
+        margin: 0 auto;
+        background: skyblue;
+    }
+
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -52px;
+        width: 16%;
+        margin: 0 auto;
+      }
+
+      .slider-box img, .slider-box-imagenes img {
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+    .hero {
+        position: relative;
+        height: 34%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 25px;
+      }
+
+    .descripcion-quienesSomos {
+        position: relative;
+        top: 0px;
+        margin: 44px 26px 0px 0;
+    }
+
+    .horario {
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #dbdcdd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
+        text-align: center;
+        width: 300px;
+    }
+
+
+
+    .menu {
+        text-align: center;
+        width: 300px;
+        /*margin: -7px auto;
+        position: relative;
+        top: -42%;*/
+    }
+
+    
+
+    .rombo {
+        display: none;
+    }
+
+    .container2 {    
+        margin-top: 219px;
+    }
+
+    .flame {
+        width: 92px;
+        height: auto;
+        position: relative;
+        top: 4px;
+      }
+
+    .quienesSomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -36%;
+        text-align: justify;
+    }
+
+    .quienesSomos-video {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 318px;
+        width: 496px;
+        border: 10px ridge black;
+      }
+
+      .quienesSomos_info {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        flex: 1;
+        margin: 0 25px;
+      }
+
+      .slider-box {
+        width: 100%;
+        height: auto;
+        margin: 18px auto;
+        overflow: hidden;
+      }
+
+      .slider-box ul, .slider-box-imagenes ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+      }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .item2 {
+        padding: 5px;
+        border: -3px solid white;
+        height: 333px;
+        width: 378px;
+        position: static;    
+        margin: 0 auto;
+        margin-bottom: 39px;
+        z-index: 1000;
+      }
+
+      iframe{
+        width: 100%;
+      }
+
+      .botonPantatalla{
+        display: none;
+      }
+
+      .contactanosFranja__Info-Tarjeta {
+        margin: 10px;
+        padding: 8px;
+        font-size: 19px;
+        position: relative;
+        left: 50px;
+      }
+
+
+      .tarjeta-rest {
+        background-repeat: no-repeat;
+        height: 291px;
+        border-radius: 6px;
+        padding: 1rem .5rem;
+        display: flex;
+        align-items: center;
+        width: 242px;
+    }
+}
+
+
+
