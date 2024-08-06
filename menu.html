@@ -320,6 +320,20 @@
       navBar.classList.toggle("active");
     }
 
+    function mostrarAncho() {
+      const ancho = window.innerWidth;
+      const div = document.querySelector('.medida');
+      div.innerHTML = `El ancho de la ventana es: ${ancho}px`;
+    }
+
+    // Llama a la función cuando la página se cargue
+    window.onload = mostrarAncho;
+
+    // Actualiza el ancho cuando se redimensiona la ventana
+    window.onresize = mostrarAncho;
+
+
+
 
   </script>
 </body>
