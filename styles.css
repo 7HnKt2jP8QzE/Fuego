@@ -300,8 +300,20 @@ footer {
     color: #fff;
     text-align: center;
 }
+.foot {
+    padding: 0px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
 
 footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.foot .socials a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
@@ -743,6 +755,8 @@ button:hover span {
     position: relative;
     z-index: 1;
 }
+
+
 
 .item2 {
     padding: 5px;
