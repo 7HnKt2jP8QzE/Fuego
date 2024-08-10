@@ -31,14 +31,15 @@ a {
     width: 100%;
 
 }
-header{
+
+header {
     width: 100%;
     height: 80px;
     background: linear-gradient(to bottom, #62162f, #cc0000);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 28px;
 }
 
 .logo{
@@ -55,11 +56,11 @@ header{
     display: flex;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
     display: block;
     color: #fefefe;
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 10px 4px;
     border-radius: 50px;
     /*transition: 0.2;*/
     margin: 0 5px;
@@ -853,6 +854,10 @@ a {
     color: #333;
 }
 
+
+.banderas{
+    width: 30px;
+}
 
 
 

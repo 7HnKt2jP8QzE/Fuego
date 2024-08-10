@@ -48,7 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 28px;
 }
 
 .logo {
@@ -69,7 +69,7 @@ header {
     display: block;
     color: #fefefe;
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 10px 4px;
     border-radius: 50px;
     /*transition: 0.2;*/
     margin: 0 5px;
@@ -867,6 +867,9 @@ button:hover span {
     box-sizing: border-box;
 }
 
+.banderas{
+    width: 30px;
+}
 
 
 /**********************@keyFrame****************************************************/
