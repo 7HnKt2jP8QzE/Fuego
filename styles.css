@@ -661,7 +661,7 @@ button {
     text-align: center;
     width: 200px;
     height: 70px;
-    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    background: linear-gradient(to bottom, #62162f, #cc0000);
     border-style: none;
     color: #fff;
     font-size: 23px;
@@ -888,12 +888,12 @@ button:hover span {
 .menu-horizontal > li > a{
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: transparent;
     text-decoration: none;
 }
 
-.menu-horizontal > li:hover{
-    background-color: red;
+.menu-horizontal > li:hover{ /*MODIFICAR*/
+    /*background-color: red;*/ 
 }
 
 /*Aqui empieza lo bueno*/
@@ -902,7 +902,7 @@ button:hover span {
     display: none;
     list-style: none;
     width: 200px;
-    background-color: rgba(0, 0, 0, .5);
+    background: linear-gradient(to bottom, #62162f, #cc0000); /*MODIFICAR*/
     z-index: 1000;
 }
 
@@ -912,15 +912,19 @@ button:hover span {
 }
 
 .menu-vertical li:hover{
-    background-color: black;
+    background: linear-gradient(to bottom, #cc0000, #62162f);
     
 }
 
 .menu-vertical li a{
     display: block;
-    color: white;
+   /* color: transparent; MODIFICAR*/
     padding: 15px 15px 15px 20px;
     text-decoration: none;
+}
+
+.menu-vertical li a:hover{
+    background: transparent;
 }
 
 
