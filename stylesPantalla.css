@@ -62,8 +62,9 @@ header {
 }
 
 .nav-bar ul {
-    display: flex;
+    /*display: flex;*/
 }
+
 
 .nav-bar ul li a {
     display: block;
@@ -869,6 +870,59 @@ button:hover span {
     width: 100%;
     box-sizing: border-box;
 }
+
+/***********************************/
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+
+/*Aqui empieza lo bueno*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1000;
+}
+
+/*Despliega el menu para abajo*/
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+    
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+
+.menuIdiomas{
+    width: 115px;
+}
+
+
 
 
 
