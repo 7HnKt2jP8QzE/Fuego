@@ -54,7 +54,8 @@ header {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #fefefe;
+    color: black;
+    text-shadow: 1px 1px 0 #D4AF37, -1px 1px 0 #D4AF37, 1px -1px 0 #D4AF37, -1px -1px 0 #D4AF37, 1px 0 0 #D4AF37, -1px 0 0 #D4AF37, 0 1px 0 #D4AF37, 0 -1px 0 #D4AF37; 
 }
 
 .hamburger {
@@ -62,12 +63,16 @@ header {
 }
 
 .nav-bar ul {
-    display: flex;
+    /*display: flex;*/
 }
+
 
 .nav-bar ul li a {
     display: block;
-    color: #fefefe;
+    color: black;
+    text-shadow: 1px 1px 0 #D4AF37, -1px 1px 0 #D4AF37, 1px -1px 0 #D4AF37, -1px -1px 0 #D4AF37, 1px 0 0 #D4AF37, -1px 0 0 #D4AF37, 0 1px 0 #D4AF37, 0 -1px 0 #D4AF37;
+    font-size: 18px;
+    font-weight: bold;
     font-size: 20px;
     padding: 10px 4px;
     border-radius: 50px;
@@ -75,15 +80,18 @@ header {
     margin: 0 5px;
 }
 
-
 .nav-bar ul li a:hover {
-    color: #000000;
+    color: #D4AF37;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
     background: #fefefe;
 }
 
 .nav-bar ul li a.active {
-    color: #000000;
     background: #fefefe;
+    color: #D4AF37;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+    font-size: 18px;
+    font-weight: bold;
 
 }
 
@@ -658,7 +666,7 @@ button {
     text-align: center;
     width: 200px;
     height: 70px;
-    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    background: linear-gradient(to bottom, #62162f, #cc0000);
     border-style: none;
     color: #fff;
     font-size: 23px;
@@ -868,9 +876,80 @@ button:hover span {
     box-sizing: border-box;
 }
 
+
 .banderas{
     width: 30px;
 }
+
+
+/***********************************/
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: transparent;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{ /*MODIFICAR*/
+    /*background-color: red;*/ 
+}
+
+/*Aqui empieza lo bueno*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: linear-gradient(to bottom, #62162f, #cc0000); /*MODIFICAR*/
+    z-index: 1000;
+}
+
+/*Despliega el menu para abajo*/
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background: linear-gradient(to bottom, #cc0000, #62162f);
+    
+}
+
+.menu-vertical li a{
+    display: block;
+    /* color: transparent; MODIFICAR*/
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.menu-vertical li a:hover{
+    background: transparent;
+}
+
+
+.menuIdiomas{
+    width: 60px;
+    text-align: center;
+}
+
+.boton .wrapper button a{
+    color: black;
+    text-shadow: 1px 1px 0 #D4AF37, -1px 1px 0 #D4AF37, 1px -1px 0 #D4AF37, -1px -1px 0 #D4AF37, 1px 0 0 #D4AF37, -1px 0 0 #D4AF37, 0 1px 0 #D4AF37, 0 -1px 0 #D4AF37;
+
+}
+
+.boton .wrapper button a:hover{
+    color: #D4AF37;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+    
+}
+
 
 
 /**********************@keyFrame****************************************************/
@@ -1360,6 +1439,3 @@ button:hover span {
 
     
 }
-
-
-
